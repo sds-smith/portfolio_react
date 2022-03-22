@@ -10,6 +10,7 @@ function Portfolio() {
             <ul className='portfolio-list'>
                 <li>
                     <Link className='portfolio-link' id='atj' to={{ pathname: "https://assemblethejams.netlify.app" }} target="_blank" >Assemble<span>the</span>Jams</Link>
+                    <span>     |     </span>
                     <Link className='portfolio-link' id='atj-readme' to={{ pathname: "https://github.com/sds-smith/assemble-the-jams#readme"}} target='_blank'>    (README.md)</Link>  
                 </li>    
             </ul>               
