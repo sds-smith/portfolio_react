@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Link, NavLink } from 'react-router-dom'
 import './App.css';
 import BusinessCard from '../BusinessCard/BusinessCard';
 import Header from '../Header/Header'
@@ -10,7 +10,7 @@ import About from '../About/About'
 function App() {
   return (
     <Router>
-      <Route>
+      <Route >
         <Header />
       </Route>
 

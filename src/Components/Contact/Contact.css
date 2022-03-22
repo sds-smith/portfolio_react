@@ -11,18 +11,11 @@
     border-top-left-radius: 33% 50%;
     border-bottom-left-radius: 33% 50%;
     background-color: rgb(139, 135, 95);
-    z-index: 10;
 }
 
 #contact h4 {
     text-decoration: underline;
     margin-top: 5px;
-}
-
-#contact h5 {
-    text-decoration: none;
-    color: black;
-    margin: 10px 0;
 }
 
 .contact-info {
@@ -40,8 +33,17 @@
 }
 
 .contact-info:hover h4,
-.contact-info:hover h5 a {
+.contact-info:hover h5 {
     transform: scale(.5);
     transition-duration: 500ms;
     margin-right: 25px;
+}
+
+.contact-link {
+    text-decoration: none;
+    color: black;
+}
+
+.contact-link:hover {
+    color: rgba(0, 0, 0, .4);
 }
