@@ -4,9 +4,8 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 10;
     height: 3rem;
-    align-items: flex-start;
+    align-items: center;
     justify-content:flex-end;    
 }
 
@@ -18,19 +17,23 @@ nav {
     margin-right: 50px;
 }
 
+.topnav ul li:first-child{
+    padding-left: 5px;
+    border-left: 1px solid black;
+}
+
 .nav-items {
     text-decoration: none;
     display: inline-block;
-    border: 0, 10px;
-    padding: 0, 10px;
+    margin-right: 5px;
+    padding-right: 5px;
+    border-right: 1px solid black;
 }
 
 a {
     text-decoration: none;
     color: black;
     display: block;
-    border: 0, 10px;
-    padding: 0, 10px;
 }
 
 a:visited {
@@ -39,4 +42,8 @@ a:visited {
 
 a:hover {
     color:hsl(208, 100%, 97%);
+}
+
+.hamburger {
+    display: none;
 }

@@ -1,0 +1,16 @@
+footer {
+    background-color: rgb(139, 135, 95);
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 100%;
+    height: 3rem;
+    font-size: small;
+}
+
+footer h4 {
+    margin-right: 50px;
+}
+
