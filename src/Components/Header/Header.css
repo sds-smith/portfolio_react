@@ -17,7 +17,7 @@ nav {
     margin-right: 50px;
 }
 
-.topnav ul li:first-child{
+.nav-items:first-child{
     padding-left: 5px;
     border-left: 1px solid black;
 }
