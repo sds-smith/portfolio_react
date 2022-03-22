@@ -18,7 +18,8 @@
 }
 
 .portfolio-list li {
-    list-style-type: none;
+    /* list-style-type: none; */
+    margin-bottom: 10px;
 }
 
 .portfolio-link {
@@ -35,6 +36,10 @@
     opacity: 50%;
 }
 
+.divider {
+    margin: 0px 10px;
+}
+
 #atj {
     background-color: black;
     color: white;
@@ -42,4 +47,10 @@
 
 #atj span {
     color: green;
+}
+
+#hangman {
+    background-image: url(../../media/wood.jpeg);
+    padding: 0px 6px;
+    color: white;
 }
