@@ -1,9 +1,10 @@
 import { BrowserRouter as Router, Route, Link, NavLink } from 'react-router-dom'
-import './App.css';
-import BusinessCard from '../BusinessCard/BusinessCard';
+import './App.css'
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
 import Contact from '../Contact/Contact'
+import BusinessCard from '../BusinessCard/BusinessCard';
+import Portfolio from '../Portfolio/Portfolio'
 import About from '../About/About'
 
 
@@ -20,6 +21,10 @@ function App() {
 
       <Route exact path='/'>
         <BusinessCard />
+      </Route>
+
+      <Route path='/portfolio'>
+        <Portfolio />
       </Route>
 
       <Route path='/about'>

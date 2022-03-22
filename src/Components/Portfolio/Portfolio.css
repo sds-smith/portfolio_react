@@ -1,0 +1,45 @@
+.Portfolio {
+     background-color: rgb(139, 135, 95);
+     color: black;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     width: 100%;
+     height: 100vh;
+ }
+
+.Portfolio .hr {
+    display: block;
+    margin: 0.5em auto;
+    height: 0.125rem;
+    width: 17.5rem; 
+    background-image: linear-gradient(to right, rgb(139, 135, 95), black, rgb(139, 135, 95)); 
+}
+
+.portfolio-list li {
+    list-style-type: none;
+}
+
+.portfolio-link {
+    text-decoration: none;
+    color: black;
+}
+
+.portfolio-link:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.portfolio-link:hover {
+    opacity: 50%;
+}
+
+#atj {
+    background-color: black;
+    color: white;
+}
+
+#atj span {
+    color: green;
+}
