@@ -1,10 +1,15 @@
 
 import './App.css';
 import BusinessCard from '../BusinessCard/BusinessCard';
+import Header from '../Header/Header'
 
 function App() {
   return (
-    <BusinessCard />
+    <div>
+      <Header />
+      <BusinessCard />
+    </div>
+
   );
 }
 
