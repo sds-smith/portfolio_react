@@ -1,14 +1,12 @@
+import { Link } from 'react-router-dom'
 import './BusinessCard.css'
 
 function BusinessCard() {
     return (
         <div className='BusinessCard' >
-            <video autoplay muted loop className="myVideo">
-                <source src="./media/Sea - mobile 24216.mp4" type="video/mp4"/>
-            </video>
-            <h1 className='full-width center name' id='name'>Shawn Smith</h1>
+            <Link to='/about' className='link'>Shawn Smith</Link>            
             <p className='hr'></p>
-            <h4 className='full-width center role' id='role'>front-end web developer</h4>                
+            <h4  id='role'>front-end web developer</h4>                
         </div>
     );
   }

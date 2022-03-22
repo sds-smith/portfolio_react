@@ -1,40 +1,49 @@
 #contact {
-    display:block;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    justify-content: center;
     position: fixed;
     right: 0;
     top: 43vh;
     height: auto;
-    width: 12rem;
-    text-align: right;
+    width: 12rem; 
     padding-top: 0;
     padding-right: 10px;
     border-top-left-radius: 33% 50%;
     border-bottom-left-radius: 33% 50%;
     background-color: rgb(139, 135, 95);
+    transition-duration: 500ms;
+    z-index: 10;
 }
 
 #contact h4 {
     text-decoration: underline;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
-.contact-info {
-    transition-duration: 500ms;
-}
+/* #contact a { */
+    /* margin: 5px; */
+/* } */
 
-.contact-info:hover {
-    transform: scale(3);
+/* #contact a:last-child { */
+    /* margin-bottom: 10px; */
+/* } */
+
+#contact:hover {
+    transform: scale(2);
     transition-duration: 500ms;
 }
 
 .contact-info h4,
 .contact-info h5 {
     transition-duration: 500ms;
+    margin: 10px;
 }
 
 .contact-info:hover h4,
 .contact-info:hover h5 {
-    transform: scale(.5);
+    transform: scale(.6);
     transition-duration: 500ms;
     margin-right: 25px;
 }
