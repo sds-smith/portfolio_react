@@ -4,21 +4,23 @@ import './Portfolio.css'
 function Portfolio() {
     return (
         <div className='Portfolio' id='page-2'>
-            <h1 id='name'>Shawn Smith</h1>
-            <p className='hr'></p>
-            <h4 id='role'>portfolio samples</h4>
-            <ul className='portfolio-list'>
-                <li>
-                    <Link className='portfolio-link' id='atj' to={{ pathname: "https://assemblethejams.netlify.app" }} target="_blank" >Assemble<span>the</span>Jams</Link>
-                    <span className='divider'>|</span>
-                    <Link className='portfolio-link' id='atj-readme' to={{ pathname: "https://github.com/sds-smith/assemble-the-jams#readme"}} target='_blank'>    (README.md)</Link>  
-                </li>    
-                <li>
-                    <Link className='portfolio-link' id='hangman' to={{ pathname: "https://sds-smith.github.io/Hangman/index.html" }} target="_blank" > Hangman Game </Link>
-                    <span className='divider'>|</span>
-                    <Link className='portfolio-link' id='hangman-readme' to={{ pathname: "https://github.com/sds-smith/assemble-the-jams#readme"}} target='_blank'>    (README.md)</Link>  
-                </li> 
-            </ul>               
+            <div className='centered-me'>
+                <h1 id='name'>Shawn Smith</h1>
+                <p className='hr'></p>
+                <h4 id='role'>portfolio samples</h4>
+                <ul className='portfolio-list'>
+                    <li>
+                        <Link className='portfolio-link' id='atj' to={{ pathname: "https://assemblethejams.netlify.app" }} target="_blank" >Assemble<span>the</span>Jams</Link>
+                        <span className='divider'>|</span>
+                        <Link className='portfolio-link' id='atj-readme' to={{ pathname: "https://github.com/sds-smith/assemble-the-jams#readme"}} target='_blank'>    (README.md)</Link>  
+                    </li>    
+                    <li>
+                        <Link className='portfolio-link' id='hangman' to={{ pathname: "https://sds-smith.github.io/Hangman/index.html" }} target="_blank" > Hangman Game </Link>
+                        <span className='divider'>|</span>
+                        <Link className='portfolio-link' id='hangman-readme' to={{ pathname: "https://github.com/sds-smith/assemble-the-jams#readme"}} target='_blank'>    (README.md)</Link>  
+                    </li> 
+                </ul> 
+            </div>              
         </div>
     );
   }

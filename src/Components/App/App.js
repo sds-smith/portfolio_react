@@ -3,6 +3,7 @@ import './App.css'
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
 import Contact from '../Contact/Contact'
+import Background from '../Background/Background'
 import BusinessCard from '../BusinessCard/BusinessCard';
 import Portfolio from '../Portfolio/Portfolio'
 import About from '../About/About'
@@ -19,6 +20,10 @@ function App() {
         <Contact />
       </Route>
 
+      <Route>
+        <Background />
+      </Route>
+      
       <Route exact path='/'>
         <BusinessCard />
       </Route>
