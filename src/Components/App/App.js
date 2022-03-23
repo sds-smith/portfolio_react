@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Link, NavLink } from 'react-router-dom'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 import './App.css'
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
@@ -7,6 +7,7 @@ import Background from '../Background/Background'
 import BusinessCard from '../BusinessCard/BusinessCard';
 import Portfolio from '../Portfolio/Portfolio'
 import About from '../About/About'
+import ContactForm from '../ContactForm/ContactForm'
 
 
 function App() {
@@ -38,6 +39,10 @@ function App() {
 
       <Route>
         <Footer />
+      </Route>  
+
+      <Route path='/contact_form'>
+        <ContactForm />
       </Route>  
     </Router>
 

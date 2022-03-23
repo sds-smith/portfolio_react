@@ -17,9 +17,14 @@
     z-index: 10;
 }
 
-#contact h4 {
-    text-decoration: underline;
+.side-nav {
     margin-top: 10px;
+    text-decoration: none;
+    
+    font-family: 'Nanum Gothic Coding', sans-serif;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: black;
 }
 
 /* #contact a { */
@@ -35,13 +40,13 @@
     transition-duration: 500ms;
 }
 
-.contact-info h4,
+.side-nav,
 .contact-info h5 {
     transition-duration: 500ms;
     margin: 10px;
 }
 
-.contact-info:hover h4,
+.contact-info:hover .side-nav,
 .contact-info:hover h5 {
     transform: scale(.6);
     transition-duration: 500ms;
@@ -53,6 +58,7 @@
     color: black;
 }
 
+.side-nav:hover,
 .contact-link:hover {
     opacity: 40%;
 }
