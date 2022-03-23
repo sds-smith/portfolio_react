@@ -37,7 +37,7 @@
 }
 
 .nav-items:hover {
-    color:hsl(208, 100%, 97%);
+    opacity: 40%;
 }
 
 .active {
