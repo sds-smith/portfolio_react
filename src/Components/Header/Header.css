@@ -44,6 +44,45 @@
     font-weight: bold;
 }
 
+.contactMobile {
+    display: none;
+    border: none;
+    border-right: 1px solid black;
+    padding-left: 0;
+    background-color: rgb(139, 135, 95);
+    font-size: 1rem;
+
+}
+
 .hamburger {
     display: none;
+    font-size: 50px;
+}
+
+/* .hamburger:hover { */
+    /* opacity: 50%; */
+/* } */
+
+@media only screen and (max-width: 1020px) {
+    .topnav {
+        margin-right: 10px;
+    }
+
+    .NavBar {
+        display: none;
+
+    }
+
+    .contactMobile {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+        padding: 0;
+        margin: 0;
+        line-height: 40px;
+        border: none;
+        background-color:rgb(139, 135, 95);
+    }
 }

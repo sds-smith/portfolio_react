@@ -5,7 +5,7 @@ import './Background.css'
 function Background() {
     return (
         <div className='Background'>
-                <Player autoPlay muted loop className='BackgroundVideo'>
+                <Player autoPlay muted loop playsInline className='BackgroundVideo'>
                     <source src={Video} type="video/mp4" />
                     <Shortcut clickable={false} />
                 </Player>
