@@ -1,6 +1,6 @@
-import './Contact.css'
+import './ContactBar.css'
 
-function Contact() {
+function ContactBar() {
     return (
         <div className='contact-info' id='contact'>
             <h4 className='side-nav'>contact:</h4>
@@ -12,4 +12,4 @@ function Contact() {
     );
   }
   
-  export default Contact;
+  export default ContactBar;

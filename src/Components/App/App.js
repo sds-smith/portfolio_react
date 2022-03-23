@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Route, Link, NavLink } from 'react-router-dom'
 import './App.css'
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
-import Contact from '../Contact/Contact'
+import ContactBar from '../ContactBar/ContactBar'
 import Background from '../Background/Background'
 import BusinessCard from '../BusinessCard/BusinessCard';
 import Portfolio from '../Portfolio/Portfolio'
@@ -17,7 +17,7 @@ function App() {
       </Route>
 
       <Route>
-        <Contact />
+        <ContactBar />
       </Route>
 
       <Route>
