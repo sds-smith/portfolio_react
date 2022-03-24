@@ -24,7 +24,6 @@ function Header() {
         if (contact.style.display === 'none') {
             contact.style.display = 'flex'
             contactButton.style.fontWeight = 'bold'
-            let x = true
         } else {
             contact.style.display = 'none'
             contactButton.fontWeight = 'normal'
