@@ -2,6 +2,7 @@
 import './ContactForm.css'
 
 function ContactForm() {
+
     return (
         <div className='ContactForm' >
             <div className='centered-me'>
@@ -15,7 +16,7 @@ function ContactForm() {
                     <inpout type='tel' placeholder='Your Telephone Number' />
                     <textarea placeholder='Comments' />
                     <button type='submit'>SUBMIT</button>
-            </form> 
+                </form> 
             </div> 
             
         </div>
