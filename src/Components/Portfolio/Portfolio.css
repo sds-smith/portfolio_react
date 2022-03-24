@@ -57,9 +57,3 @@
 #atj span {
     color: green;
 }
-
-#hangman {
-    background-image: url(../../media/wood.jpeg);
-    padding: 0px 6px;
-    color: white;
-}
