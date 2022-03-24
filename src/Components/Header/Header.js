@@ -27,7 +27,7 @@ function Header() {
             let x = true
         } else {
             contact.style.display = 'none'
-            contactButton.style.fontWeight = 'normal'
+            contactButton.fontWeight = 'normal'
         }
     }
 

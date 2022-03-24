@@ -1,3 +1,5 @@
+import { useState } from 'react'
+import { useMediaQuery } from '../../util/customHooks'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import './App.css'
 import Header from '../Header/Header'
@@ -11,6 +13,9 @@ import ContactForm from '../ContactForm/ContactForm'
 
 
 function App() {
+
+  let isMobile = useMediaQuery('(max-width: 1020px)')
+
   return (
     <Router>
       <Route >
@@ -18,7 +23,7 @@ function App() {
       </Route>
 
       <Route>
-        <ContactBar />
+        <ContactBar isMobile={isMobile}/>
       </Route>
 
       <Route>
