@@ -27,14 +27,6 @@
     color: black;
 }
 
-/* #contact a { */
-    /* margin: 5px; */
-/* } */
-
-/* #contact a:last-child { */
-    /* margin-bottom: 10px; */
-/* } */
-
 #contact:hover {
     transform: scale(2);
     transition-duration: 500ms;
@@ -95,5 +87,12 @@
 
     .icon {
         display: block;
+    }
+
+    .contact-info:hover,
+    .contact-info:hover .side-nav,
+    .contact-info:hover h5 {
+        transform: none;
+        transition-duration: 0ms;
     }
 }
