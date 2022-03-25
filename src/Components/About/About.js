@@ -5,7 +5,7 @@ function About() {
     return (
         <div className='About' id='page-3'>
             <div className='profile'>
-                <img src={Portrait} />
+                <img src={Portrait} alt='handsome headshot'/>
                 <div className='name-title'>
                     <h1 id='name'>Shawn Smith</h1>
                     <p className='hr'></p>
