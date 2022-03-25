@@ -6,7 +6,6 @@
         align-items: center;
         justify-content: center;
         font-family: 'Nanum Gothic Coding', sans-serif;
-        /* font-size: 32px;    */
         background-color: black;
         color: rgb(139, 135, 95);
         width: 100%;
@@ -46,6 +45,7 @@
 
     .about-section {
         margin: 0px 20px;
+        height: 60%;
     }
 
     .about-paragraph {
@@ -57,6 +57,11 @@
     }
 
     @media only screen and (max-width: 1020px) {
+        .About {
+            padding-top: 20px;
+            padding-bottom: 60px;
+            height: fit-content;
+        }
         .profile {
             margin-top: 100px;
             justify-content: center;
