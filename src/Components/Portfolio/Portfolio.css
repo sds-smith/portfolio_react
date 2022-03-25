@@ -1,5 +1,8 @@
 .Portfolio {
-     background-color: rgb(139, 135, 95);
+     position: absolute;
+     top: 0;
+     left: 0;
+     background-color: rgba(139, 135, 95, .9);
      font-family: 'Nanum Gothic Coding', sans-serif;
      color: black;
      display: flex;
