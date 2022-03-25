@@ -6,14 +6,14 @@ it can be viewed at [https://sds-smith.dev](https://sds-smith.dev)
 
 ## The site consists of eight total Components:
 
-* App, which renders all other components in React Router
-* Header, Footer, and ContactBar which persist through all routes when viewed in desktop (ContactBar is not visible in mobile unless the user opens it).
+* **App**, which renders all other components in React Router
+* **Header**, **Footer**, and **ContactBar** which persist through all routes when viewed in desktop (ContactBar is not visible in mobile unless the user opens it).
      - Header contains links to the three main pages; the currently active link will appear in bold
     - ContactBar contains four active links (email opens the users email client, phone opens the users phone dialer on mobile, Linkedin and GitHub are active links to my respective profiles on those sites).
-* Three main pages (BusinessCard which is the home page, Portfolio containing links to other projects, and About which offers some background info on myself).
-* ContactForm, which is accessible by clicking the 'Contact:' heading in the ContactBar
+* Three main pages (**BusinessCard** which is the home page, **Portfolio** containing links to other projects, and **About** which offers some background info on myself).
+* **ContactForm**, which is accessible by clicking the 'Contact:' heading in the ContactBar
 
-The site is designed to be responsive to screen size (desktop vs mobile) in three ways:
+## The site is designed to be responsive to screen size (desktop vs mobile) in three ways:
    * **`CSS flexbox styling`** adapts the layout to display eye-appealing flow in any screen size, orientation, or aspect ratio.  You can test this by adjusting your browser window to any size, or by visiting the site on mobile side-by-side with desktop.
    * **`CSS media queries`**  change the CSS properties of some elements based on screen size
    * **`A custom React hook`**  "listens" for the size of the browser window and conditionally renders elements based on that size.  This hook mimics the classic media query, but is written in JavaScript, making it more powerful and able to render items conditionally based on screen size match.
