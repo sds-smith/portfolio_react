@@ -54,8 +54,18 @@
 }
 
 .contact-link {
+    display: flex;
+    justify-content: right;
+    align-items: center;
     text-decoration: none;
     color: black;
+}
+
+.icon {
+    display: none;
+    height: 1rem;
+    width: auto;
+    margin-left: 10px;
 }
 
 .side-nav:hover,
@@ -66,5 +76,24 @@
 @media only screen and (max-width: 1020px) {
     #contact {
         display: none;
+        width: 6rem;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .side-nav {
+        margin-right: 0px;
+    }
+
+    .contact-link {
+        justify-content: center;
+    }
+
+    .contact-link span {
+        display: none;
+    }
+
+    .icon {
+        display: block;
     }
 }
