@@ -13,7 +13,6 @@
         color: rgb(139, 135, 95);
         width: 100%;
         height: 100vh;
-        border: 5px solid orange;
     }
     
     .hr {
@@ -50,7 +49,6 @@
     .about-section {
         margin: 0px 20px;
         height: 60%;
-        border: 5px solid blueviolet;
     }
     
     .about-paragraph {
