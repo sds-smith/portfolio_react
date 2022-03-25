@@ -26,6 +26,7 @@
 
 .nav-items {
     display: inline-block;
+    color: black;
     margin-right: 5px;
     padding-right: 5px;
     border-right: 1px solid black;
