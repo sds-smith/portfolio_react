@@ -85,4 +85,8 @@
         border: none;
         background-color:rgb(139, 135, 95);
     }
+
+    .nav-items:hover {
+        opacity: 100%;
+    }
 }
