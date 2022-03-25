@@ -2,6 +2,8 @@
 
 This site is a single-page web app built with [Create React App](https://create-react-app.dev/).  It employs React functional Components, React hooks including custom hooks, React router, and Netlify forms integration.
 
+it can be viewed at [https://sds-smith.dev](https://sds-smith.dev)
+
 ## The site consists of eight total Components:
 
 * App, which renders all other components in React Router
