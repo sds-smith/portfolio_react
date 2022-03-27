@@ -29,13 +29,22 @@
     justify-content: center;     
 }
 
+.portfolio-list {
+    width: 100%;
+}
+
 .portfolio-list li {
     /* list-style-type: none; */
+    display: flex;
+    width: 100;
+    justify-content: center;
     margin-bottom: 10px;
 }
 
 .portfolio-link {
     text-decoration: none;
+    width: 12rem;
+    text-align: center;
     color: black;
 }
 
@@ -48,11 +57,16 @@
     opacity: 40%;
 }
 
+.rm {
+    width: 4rem;
+}
+
 .divider {
     margin: 0px 10px;
 }
 
-#atj {
+#atj,
+#pwgen {
     background-color: black;
     color: white;
 }

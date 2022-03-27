@@ -12,8 +12,13 @@ function Portfolio() {
                     <li>
                         <Link className='portfolio-link' id='atj' to={{ pathname: "https://assemblethejams.netlify.app" }} target="_blank" >Assemble<span>the</span>Jams</Link>
                         <span className='divider'>|</span>
-                        <Link className='portfolio-link' id='atj-readme' to={{ pathname: "https://github.com/sds-smith/assemble-the-jams#readme"}} target='_blank'>    (README.md)</Link>  
+                        <Link className='portfolio-link rm' id='atj-readme' to={{ pathname: "https://github.com/sds-smith/assemble-the-jams#readme"}} target='_blank'>(README.md)</Link>  
                     </li>    
+                    <li>
+                        <Link className='portfolio-link' id='pwgen' to={{ pathname: "https://sds-smith.github.io/password_generator/" }} target="_blank" >Password Generator</Link>
+                        <span className='divider'>|</span>
+                        <Link className='portfolio-link rm' id='pwgen-readme' to={{ pathname: "https://github.com/sds-smith/password_generator#readme"}} target='_blank'>(README.md)</Link>  
+                    </li> 
                 </ul> 
             </div>              
         </div>
