@@ -15,6 +15,7 @@ function ContactForm() {
     const [message, setMessage] = useState('')
 
     const handleSubmit = e => {
+        e.preventDefault();
         fetch("/", {
           method: "POST",
           headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -26,10 +27,10 @@ function ContactForm() {
                         "message": message
                      })
         })
-          .then(() => alert("Success!"))
+          .then(() => alert("Success! Your form has been submitted!"))
           .catch(error => alert(error));
-  
-        e.preventDefault();
+          document.querySelectorAll('.input').forEach(element => element.value = '')
+
       };
   
     const handleChangeFirstName = e => setFirstName(e.target.value);
@@ -44,10 +45,10 @@ function ContactForm() {
                 <p className='hr'></p>
                 <h4 id='role'>contact</h4>
                 <form className='form' onSubmit={handleSubmit} >
-                    <input type='text' placeholder='Your First Name' name='first-name' value={firstName} required onChange={handleChangeFirstName}/>
-                    <input type='text' placeholder='Your Last Name' name='last-name' value={lastName} required onChange={handleChangeLastName}/>
-                    <input type='email' placeholder='Your Email Address' name='email' value={email} required onChange={handleChangeEmail}/>
-                    <textarea placeholder='Comments' name='message' value={message} required onChange={handleChangeMessage}/>
+                    <input type='text' placeholder='Your First Name' name='first-name' value={firstName} className='input'required onChange={handleChangeFirstName}/>
+                    <input type='text' placeholder='Your Last Name' name='last-name' value={lastName} className='input'required onChange={handleChangeLastName}/>
+                    <input type='email' placeholder='Your Email Address' name='email' value={email} className='input'required onChange={handleChangeEmail}/>
+                    <textarea placeholder='Comments' name='message' value={message} className='input'required onChange={handleChangeMessage}/>
                     <button type='submit'>SUBMIT</button>
                 </form> 
             </div> 
