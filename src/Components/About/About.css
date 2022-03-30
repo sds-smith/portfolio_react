@@ -123,4 +123,9 @@
         .profile img {
             margin: 0;
         }
+
+        .about-paragraph ul {
+            margin-left: 0;
+            margin-right: 0;
+        }
     }
