@@ -49,6 +49,7 @@
     .about-section {
         margin: 0px 20px;
         height: 60%;
+        font-family: 'IBM Plex Sans';
     }
     
     .about-paragraph {
@@ -56,11 +57,48 @@
         flex-direction: column;
         height: 80%;
         overflow: scroll;
-        border: 5px solid salmon;
     }
 
     .about-paragraph ul {
-        align-self: center;
+        margin-left: 25%;
+        margin-right: 25%;
+        font-size: 1rem;
+        font-family: 'IBM Plex Sans';
+    }
+
+    .about-paragraph li:first-child {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .about-paragraph li:nth-child(2) {
+        font-size: 1.5rem;
+        opacity: 80%;
+    }
+
+    .about-paragraph li:nth-child(3) {
+        font-size: 1.25rem;
+        opacity: 70%;
+    }
+
+    .about-paragraph li:nth-child(4) {
+        font-size: 1rem;
+        opacity: 60%;
+    }
+
+    .about-paragraph li:nth-child(5) {
+        font-size: .75rem;
+        opacity: 50%;
+    }
+
+    .about-paragraph li:nth-child(6) {
+        font-size: .5rem;
+        opacity: 40%;
+    }
+
+    .about-paragraph li:nth-child(7) {
+        font-size: .25rem;
+        opacity: 30%;
     }
 
     .about-paragraph li {

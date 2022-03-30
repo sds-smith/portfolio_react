@@ -1,27 +1,37 @@
+import { useState, useEffect  } from 'react';
 import './About.css'
 import Portrait from '../../media/portrait.jpeg'
 
 function About() {
 
-    const skills = ['Responsive Web Design', 
-                    'Dynamic Web Development and asyncronous code', 
-                    'JavaScript Algorithms and Data Structures',
-                    '   Singly and Doubly Linked Lists',
-                    '   Stacks and Queues',
-                    '   Hash Maps',
-                    '   Trees, Heaps,',
-                    '   Graphs',
-                    'Object Oriented Programming',
-                    'TypeScript',
-                    'Front End Development Libraries:',
-                    '   React.js',
-                    '   Vue.js',
-                    'Single-page Web Apps',
-                    'Web Accessibility',
-                    'Web APIs',
-                    'Node.js',
-                    'React Native',
-                    ]
+    const [skills, setSkills] = useState([
+                    ['li', 'Responsive Web Design'], 
+                    ['li', 'Dynamic Web Development and asynchronous code'], 
+                    ['li', 'JavaScript Algorithms and Data Structures'],
+                    ['li', 'Singly and Doubly Linked Lists'],
+                    ['li', 'Stacks and Queues'],
+                    ['li', 'Hash Maps'],
+                    ['li', 'Trees, Heaps,'],
+                    ['li', 'Graphs'],
+                    ['li', 'Object Oriented Programming'],
+                    ['li', 'TypeScript'],
+                    ['li', 'Front End Development Libraries:'],
+                    ['li', 'React.js'],
+                    ['li', 'Vue.js'],
+                    ['li', 'Single-page Web Apps'],
+                    ['li', 'Web Accessibility'],
+                    ['li', 'Web APIs'],
+                    ['li', 'Node.js'],
+                    ['li', 'React Native'],
+                    ])
+        
+    useEffect(() => {
+
+        const interval = setInterval(() => {
+          setSkills([...skills.slice(1), skills[0]])
+        }, 2000);
+        return () => clearInterval(interval);
+    }, [skills]); 
 
     return (
         <div className='About' id='page-3'>
@@ -47,9 +57,13 @@ function About() {
                     <p >From my experience as a multi-unit restaurant leader, I bring soft skills like strong communication, collaboration, relationship-building.</p>
                     <p >From my studies in Web Development, I have attained valuable technical skills, including:</p>
                     <ul>
-                        <li>{skills[0]}</li>
-                        <li>{skills[1]}</li>
-                        <li>{skills[2]}</li>
+                        <li>{skills[0][1]}</li>
+                        <li>{skills[1][1]}</li>
+                        <li>{skills[2][1]}</li>
+                        <li>{skills[3][1]}</li>
+                        <li>{skills[4][1]}</li>
+                        <li>{skills[5][1]}</li>
+                        <li>{skills[6][1]}</li>
                     </ul>
 
                 </div>
