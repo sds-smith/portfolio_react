@@ -52,8 +52,15 @@
     }
     
     .about-paragraph {
+        display: flex;
+        flex-direction: column;
         height: 80%;
         overflow: scroll;
+        border: 5px solid salmon;
+    }
+
+    .about-paragraph ul {
+        align-self: center;
     }
 
     .about-paragraph li {

@@ -2,6 +2,27 @@ import './About.css'
 import Portrait from '../../media/portrait.jpeg'
 
 function About() {
+
+    const skills = ['Responsive Web Design', 
+                    'Dynamic Web Development and asyncronous code', 
+                    'JavaScript Algorithms and Data Structures',
+                    '   Singly and Doubly Linked Lists',
+                    '   Stacks and Queues',
+                    '   Hash Maps',
+                    '   Trees, Heaps,',
+                    '   Graphs',
+                    'Object Oriented Programming',
+                    'TypeScript',
+                    'Front End Development Libraries:',
+                    '   React.js',
+                    '   Vue.js',
+                    'Single-page Web Apps',
+                    'Web Accessibility',
+                    'Web APIs',
+                    'Node.js',
+                    'React Native',
+                    ]
+
     return (
         <div className='About' id='page-3'>
             <div className='profile'>
@@ -26,17 +47,9 @@ function About() {
                     <p >From my experience as a multi-unit restaurant leader, I bring soft skills like strong communication, collaboration, relationship-building.</p>
                     <p >From my studies in Web Development, I have attained valuable technical skills, including:</p>
                     <ul>
-                        <li>Responsive Web Design</li>
-                        <li>Dynamic Web Development and asyncronous coding</li>
-                        <li>Javascript Algorithms and Data Structures</li>
-                        <li>Front End Development Libraries</li>
-                            <ul>
-                                <li>React.js</li>
-                                <li>Vue</li>
-                            </ul>
-                        <li>Single-page Web Apps</li>
-                        <li>Web Accessibility</li>
-                        <li>Web APIs</li>
+                        <li>{skills[0]}</li>
+                        <li>{skills[1]}</li>
+                        <li>{skills[2]}</li>
                     </ul>
 
                 </div>
