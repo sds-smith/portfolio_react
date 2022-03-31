@@ -31,22 +31,37 @@
 
 .portfolio-list {
     width: 60%;
+    display: flex;
+
 }
 
 .portfolio-list li {
     /* list-style-type: none; */
     display: flex;
-    width: 100;
     justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 10px;
+    height: 15rem;
+    width: 30rem;
+    margin: 0 10px;
+}
+
+.card {
+    width: 20rem;
+    border-radius: 10%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
 }
 
 .portfolio-link {
     text-decoration: none;
-    width: 12rem;
+    width: 6rem;
+    height: 3rem;
+    background-color: rgb(217, 213, 169);
     text-align: center;
-    color: black;
+    line-height: 3rem;
+    font-size: 1.25rem;
+    margin-bottom: .5rem;
+    border-radius: 10%;
 }
 
 .portfolio-link:visited {
@@ -55,22 +70,35 @@
 }
 
 .portfolio-link:hover {
-    opacity: 40%;
+    opacity: 60%;
 }
 
 .rm {
-    width: 4rem;
+    /* background-color: rgb(107, 95, 140); */
+    background-color: rgb(64, 62, 37);
+
+    color: white;
 }
 
 .divider {
     margin: 0px 10px;
 }
 
-#atj,
-#pwgen {
-    background-color: black;
-    color: white;
+#atj-card {
+    background-image: url(../../media/atj.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
 }
+
+#rpg-card {
+    background-image: url(../../media/rpg.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+
+
 
 #atj span {
     color: green;
