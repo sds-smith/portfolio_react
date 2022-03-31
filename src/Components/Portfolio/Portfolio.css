@@ -56,8 +56,11 @@
     text-decoration: none;
     width: 6rem;
     height: 3rem;
-    background-color: rgb(90, 87, 54);
+    background-color: rgb(217, 213, 169);
+    /* background-color: rgb(245, 232, 91); */
     text-align: center;
+    line-height: 3rem;
+    font-size: 1.25rem;
     margin-bottom: .5rem;
     border-radius: 10%;
 }
@@ -72,7 +75,8 @@
 }
 
 .rm {
-    width: 4rem;
+    background-color: rgb(107, 95, 140);
+    color: white;
 }
 
 .divider {
