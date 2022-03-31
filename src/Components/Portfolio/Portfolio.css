@@ -47,13 +47,19 @@
 .card {
     width: 20rem;
     border-radius: 10%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
 }
 
 .portfolio-link {
     text-decoration: none;
-    width: 12rem;
+    width: 6rem;
+    height: 3rem;
+    background-color: rgb(90, 87, 54);
     text-align: center;
-    color: black;
+    margin-bottom: .5rem;
+    border-radius: 10%;
 }
 
 .portfolio-link:visited {
@@ -62,7 +68,7 @@
 }
 
 .portfolio-link:hover {
-    opacity: 40%;
+    opacity: 60%;
 }
 
 .rm {
@@ -87,11 +93,7 @@
     background-position: center;
 }
 
-#atj,
-#pwgen {
-    background-color: black;
-    color: white;
-}
+
 
 #atj span {
     color: green;
