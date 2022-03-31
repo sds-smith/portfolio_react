@@ -28,6 +28,7 @@
 }
 
 #contact:hover {
+    background-color: rgb(217, 213, 169);
     transform: scale(2);
     transition-duration: 500ms;
 }
