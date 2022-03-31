@@ -68,7 +68,9 @@
 
     .about-paragraph li:first-child {
         font-size: 2rem;
-        font-weight: bold;
+        /* font-weight: bold; */
+        color: rgb(217, 213, 169);
+
     }
 
     .about-paragraph li:nth-child(2) {
