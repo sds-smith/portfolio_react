@@ -65,14 +65,14 @@
 }
 
 #ios-card {
-   background-image: url(../../media/WHRDL_iOS_Screenshot2.png);
+   background-image: url(../../media/WHRDL_Screenshot_iOS.png);
    background-repeat: no-repeat;
    background-size:cover;
    background-position: center;
 }
 
 #android-card {
-   background-image: url(../../media/WHRDL_Android_Screenshot.png);
+   background-image: url(../../media/WHRDL_Screenshot_Android.png);
    background-repeat: no-repeat;
    background-size:cover;
    background-position: center;
