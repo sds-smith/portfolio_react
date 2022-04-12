@@ -8,7 +8,8 @@
      display: flex;
      flex-direction: column;
      align-items: center;
-     justify-content: center;
+     justify-content: start;
+     padding-top: 5rem;
      width: 100%;
      height: 100%;
      overflow: none;
@@ -24,6 +25,7 @@
 }
 
 .portfolio-list {
+    padding-top: 5rem;
     padding-left: 0;
     width: 95%;
     display: flex;
@@ -39,6 +41,19 @@
     height: 20rem;
     width: 20rem;
     margin: 0 1rem;
+}
+
+.card-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    height: 10rem;
+}
+
+.card-heading h3,
+.card-heading p {
+    margin: 0;
 }
 
 .card {
@@ -83,6 +98,13 @@
     background-position: center;
 }
 
+#WHRDL-card {
+    background-image: url(../../media/WHRDL_iOS_Screenshot2.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+
 #rpg-card {
     background-image: url(../../media/rpg.png);
     background-repeat: no-repeat;
@@ -103,6 +125,7 @@
     .portfolio-list {
         flex-direction: column;
         align-items: center;
+        padding-top: 0;
         justify-content: flex-start;
         height: 65%;
         overflow-y: scroll;
