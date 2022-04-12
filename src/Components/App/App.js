@@ -11,7 +11,7 @@ import BusinessCard from '../BusinessCard/BusinessCard';
 import Portfolio from '../Portfolio/Portfolio'
 import About from '../About/About'
 import ContactForm from '../ContactForm/ContactForm'
-
+import WHRDL from '../WHRDL/WHRDL'
 
 function App() {
 
@@ -49,9 +49,9 @@ function App() {
           <ContactForm />
         </Route>  
 
-        {/* <Route> */}
-          {/* <Background /> */}
-        {/* </Route> */}
+        <Route path='/WHRDL'>
+          <WHRDL />
+        </Route>
 
       </Router>
   );

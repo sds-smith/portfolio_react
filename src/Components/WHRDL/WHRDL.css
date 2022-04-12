@@ -1,0 +1,110 @@
+.WHRDL {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(139, 135, 95, .9);
+    font-family: 'Nanum Gothic Coding', sans-serif;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    overflow: none;
+
+}
+
+.WHRDL .hr {
+   display: block;
+   margin: 0.5em auto;
+   height: 0.125rem;
+   width: 17.5rem; 
+   background-image: linear-gradient(to right, rgb(139, 135, 95), black, rgb(139, 135, 95)); 
+}
+
+.WHRDL-list {
+   padding-left: 0;
+   width: 95%;
+   display: flex;
+   justify-content: center;
+}
+
+.WHRDL-list li {
+   /* list-style-type: none; */
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   height: 45rem;
+   width: 14rem;
+   margin: 0 2.5rem;
+}
+
+.card {
+   width: 16rem;
+   height: 33rem;
+   border-radius: 10%;
+   display: flex;
+   align-items: flex-end;
+   justify-content: space-around;
+}
+
+.WHRDL-link {
+   text-decoration: none;
+   width: 6rem;
+   height: 3rem;
+   background-color: rgb(217, 213, 169);
+   text-align: center;
+   line-height: 3rem;
+   font-size: 1.25rem;
+   margin-bottom: .5rem;
+   border-radius: 10%;
+}
+
+.WHRDL-link:visited {
+   text-decoration: none;
+   color: black;
+}
+
+.WHRDL-link:hover {
+   opacity: 60%;
+}
+
+.rm {
+   background-color: rgb(64, 62, 37);
+   color: white;
+}
+
+#ios-card {
+   background-image: url(../../media/WHRDL_iOS_Screenshot1.png);
+   background-repeat: no-repeat;
+   background-size:cover;
+   background-position: center;
+}
+
+#rpg-card {
+   background-image: url(../../media/WHRDL_Android_Screenshot.png);
+   background-repeat: no-repeat;
+   background-size:cover;
+   background-position: center;
+}
+
+.description {
+   width: 60%;
+   text-align: center;
+}
+
+@media only screen and (max-width : 1020px) and (orientation: portrait) {
+   .WHRDL {
+       padding-top: 3rem;
+   }
+
+   .WHRDL-list {
+       flex-direction: column;
+       align-items: center;
+       justify-content: flex-start;
+       height: 65%;
+       overflow-y: scroll;
+   }
+}
