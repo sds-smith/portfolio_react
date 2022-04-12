@@ -29,7 +29,7 @@ function Portfolio() {
                         <div className='card' id='WHRDL-card'>
                             <Link className='portfolio-link' id='WHRDL' to='/WHRDL' >Demo</Link>
                             {/* <span className='divider'>|</span> */}
-                            <Link className='portfolio-link rm' id='pwgen-readme' to={{ pathname: "https://github.com/sds-smith/password_generator#readme"}} target='_blank'>About</Link>  
+                            <Link className='portfolio-link rm' id='WRDL-readme' to={{ pathname: "https://github.com/sds-smith/whrdl#readme"}} target='_blank'>About</Link>  
                         </div>
                          <p className='description'>Generate random unique password and{/* copy to clipboard*/}</p>
                     </li> 
