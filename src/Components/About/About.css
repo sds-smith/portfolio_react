@@ -72,28 +72,28 @@
     }
 
     .about-paragraph li:first-child {
+        font-size: 1.0rem;
+        opacity: 60%;
+    }
+
+    .about-paragraph li:nth-child(2) {
+        font-size: 1.25rem;
+        opacity: 75%;
+    }
+
+    .about-paragraph li:nth-child(3) {
         font-size: 2rem;
         color: rgb(217, 213, 169);
     }
 
-    .about-paragraph li:nth-child(2) {
-        font-size: 1.5rem;
-        opacity: 80%;
-    }
-
-    .about-paragraph li:nth-child(3) {
-        font-size: 1.25rem;
-        opacity: 70%;
-    }
-
     .about-paragraph li:nth-child(4) {
-        font-size: 1rem;
-        opacity: 60%;
+        font-size: 1.25rem;
+        opacity: 75%;
     }
 
     .about-paragraph li:nth-child(5) {
-        font-size: .75rem;
-        opacity: 50%;
+        font-size: 1.0rem;
+        opacity: 60%;
     }
 
     .about-paragraph li:nth-child(6) {
