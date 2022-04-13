@@ -15,8 +15,8 @@ function Portfolio() {
                         </div>
 
                         <div className='card' id='atj-card'>
-                            <Link className='portfolio-link' id='atj' to={{ pathname: "https://assemblethejams.netlify.app" }} target="_blank" >Demo</Link>
-                            <Link className='portfolio-link rm' id='atj-readme' to={{ pathname: "https://github.com/sds-smith/assemble-the-jams#readme"}} target='_blank'>About</Link>  
+                            <Link className='portfolio-link' id='atj' style={{color: 'rgb(64, 62, 37)'}} to={{ pathname: "https://assemblethejams.netlify.app" }} target="_blank" >Demo</Link>
+                            <Link className='portfolio-link rm' id='atj-readme' style={{color: 'rgb(217, 213, 169)'}} to={{ pathname: "https://github.com/sds-smith/assemble-the-jams#readme"}} target='_blank'>About</Link>  
                         </div>
                         <p className='description'>Connect to Spotify API, search...{/* songs, create custom playlist, and save playlist to your Spotify profile.*/}</p>
                     </li><br/>   
@@ -27,11 +27,10 @@ function Portfolio() {
                         </div>
 
                         <div className='card' id='WHRDL-card'>
-                            <Link className='portfolio-link' id='WHRDL' to='/WHRDL' >Demo</Link>
-                            {/* <span className='divider'>|</span> */}
-                            <Link className='portfolio-link rm' id='WRDL-readme' to={{ pathname: "https://github.com/sds-smith/whrdl#readme"}} target='_blank'>About</Link>  
+                            <Link className='portfolio-link' id='WHRDL' style={{color: 'rgb(64, 62, 37)'}} to='/WHRDL' >Demo</Link>
+                            <Link className='portfolio-link rm' id='WRDL-readme' style={{color: 'rgb(217, 213, 169)'}} to={{ pathname: "https://github.com/sds-smith/whrdl#readme"}} target='_blank'>About</Link>  
                         </div>
-                         <p className='description'>Generate random unique password and{/* copy to clipboard*/}</p>
+                         <p className='description'>Guess the secret word in six tries.</p>
                     </li> 
                     <li>
                         <div className='card-heading'>
@@ -40,9 +39,8 @@ function Portfolio() {
                         </div>
 
                         <div className='card' id='rpg-card'>
-                            <Link className='portfolio-link' id='pwgen' to={{ pathname: "https://sds-smith.github.io/password_generator/" }} target="_blank" >Demo</Link>
-                            {/* <span className='divider'>|</span> */}
-                            <Link className='portfolio-link rm' id='pwgen-readme' to={{ pathname: "https://github.com/sds-smith/password_generator#readme"}} target='_blank'>About</Link>  
+                            <Link className='portfolio-link' id='pwgen' style={{color: 'rgb(64, 62, 37)'}} to={{ pathname: "https://sds-smith.github.io/password_generator/" }} target="_blank" >Demo</Link>
+                            <Link className='portfolio-link rm' id='pwgen-readme' style={{color: 'rgb(217, 213, 169)'}} to={{ pathname: "https://github.com/sds-smith/password_generator#readme"}} target='_blank'>About</Link>  
                         </div>
                          <p className='description'>Generate random unique password and{/* copy to clipboard*/}</p>
                     </li> 

@@ -20,7 +20,7 @@
         margin: 0.5em auto;
         height: 0.125rem;
         width: 17.5rem; 
-        background-image: linear-gradient(to right, black, rgb(139, 135, 95), black); 
+        background-image: linear-gradient(to right, rgb(0,0,0), rgb(139, 135, 95), rgb(0,0,0)); 
       }
     
     .profile {
@@ -50,6 +50,7 @@
         margin: 0px 20px;
         height: 60%;
         font-family: 'IBM Plex Sans';
+
     }
     
     .about-paragraph {
@@ -57,6 +58,10 @@
         flex-direction: column;
         height: 80%;
         overflow: scroll;
+    }
+
+    .about-paragraph p {
+        color: rgb(217, 213, 169);
     }
 
     .about-paragraph ul {
@@ -68,9 +73,7 @@
 
     .about-paragraph li:first-child {
         font-size: 2rem;
-        /* font-weight: bold; */
         color: rgb(217, 213, 169);
-
     }
 
     .about-paragraph li:nth-child(2) {

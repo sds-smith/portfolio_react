@@ -2,7 +2,7 @@
      position: absolute;
      top: 0;
      left: 0;
-     background-color: rgba(139, 135, 95, .9);
+     background-color: rgba(109, 134, 140,.9);
      font-family: 'Nanum Gothic Coding', sans-serif;
      color: black;
      display: flex;
@@ -21,7 +21,7 @@
     margin: 0.5em auto;
     height: 0.125rem;
     width: 17.5rem; 
-    background-image: linear-gradient(to right, rgb(139, 135, 95), black, rgb(139, 135, 95)); 
+    background-image: linear-gradient(to right, rgba(109, 134, 140,.9), black, rgba(109, 134, 140,.9)); 
 }
 
 .portfolio-list {
@@ -88,7 +88,6 @@
 
 .rm {
     background-color: rgb(64, 62, 37);
-    color: white;
 }
 
 #atj-card {
