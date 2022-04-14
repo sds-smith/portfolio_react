@@ -129,4 +129,9 @@
         height: 65%;
         overflow-y: scroll;
     }
+
+    .portfolio-list li,
+    .card {
+        height: auto
+    }
 }
