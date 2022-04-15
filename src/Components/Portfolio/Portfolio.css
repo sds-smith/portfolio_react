@@ -41,6 +41,7 @@
     height: 20rem;
     width: 20rem;
     margin: 0 1rem;
+    border: 5px solid salmon
 }
 
 .card-heading {
@@ -132,6 +133,6 @@
 
     .portfolio-list li,
     .card {
-        height: auto
+        /* height: auto */
     }
 }
