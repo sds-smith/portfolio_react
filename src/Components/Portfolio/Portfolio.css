@@ -133,6 +133,6 @@
 
     .portfolio-list li,
     .card {
-        /* height: auto */
+        height: 160px
     }
 }
