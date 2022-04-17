@@ -24,6 +24,27 @@
     background-image: linear-gradient(to right, rgba(109, 134, 140,.9), black, rgba(109, 134, 140,.9)); 
 }
 
+.carousel {
+    display: flex;
+    align-items: center;
+}
+
+.carousel button {
+    border: none;
+    height: 2rem;
+    font-size: 3rem;
+    color:rgb(64, 62, 37);
+    background-color: rgba(109, 134, 140, .9);
+}
+
+.carousel button:hover {
+    opacity: 60%;
+}
+
+.reverse-btn {
+    transform: rotate(180deg)
+}
+
 .portfolio-list {
     padding-top: 5rem;
     padding-left: 0;
@@ -33,7 +54,6 @@
 }
 
 .portfolio-list li {
-    /* list-style-type: none; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -41,10 +61,15 @@
     height: 20rem;
     width: 20rem;
     margin: 0 1rem;
+    overflow: visible;
 }
 
 .portfolio-list li:nth-child(2) {
     transform: scale(1.5);
+}
+
+.portfolio-list li:nth-child(2) .description {
+    transform: scale(.75);
 }
 
 .card-heading {

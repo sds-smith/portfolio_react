@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom'
 import './Portfolio.css'
 
@@ -15,7 +15,7 @@ function Portfolio() {
                 <Link className='portfolio-link' id='atj' style={{color: 'rgb(64, 62, 37)'}} to={{ pathname: "https://assemblethejams.netlify.app" }} target="_blank" >Demo</Link>
                 <Link className='portfolio-link rm' id='atj-readme' style={{color: 'rgb(217, 213, 169)'}} to={{ pathname: "https://github.com/sds-smith/assemble-the-jams#readme"}} target='_blank'>About</Link>  
             </div>
-            <p className='description'>Connect to Spotify API, search...{/* songs, create custom playlist, and save playlist to your Spotify profile.*/}</p>
+            <p className='description'>Connect to Spotify API, search songs, create custom playlist, and save playlist to your Spotify profile.</p>
         </li>,
 
         <li>
@@ -41,19 +41,37 @@ function Portfolio() {
                 <Link className='portfolio-link' id='pwgen' style={{color: 'rgb(64, 62, 37)'}} to={{ pathname: "https://sds-smith.github.io/password_generator/" }} target="_blank" >Demo</Link>
                 <Link className='portfolio-link rm' id='pwgen-readme' style={{color: 'rgb(217, 213, 169)'}} to={{ pathname: "https://github.com/sds-smith/password_generator#readme"}} target='_blank'>About</Link>  
             </div>
-             <p className='description'>Generate random unique password and{/* copy to clipboard*/}</p>
+             <p className='description'>Generate random unique password and copy to clipboard</p>
         </li>     
 
     ])
+
+    const advanceCarousel = () => {
+        setCards([cards[cards.length-1], ...cards.slice(0, cards.length-1)])
+    }
+
+    const reverseCarousel = () => {
+        setCards([...cards.slice(1), cards[0]])
+    }
+
+    useEffect(() => {
+        reverseCarousel()
+    },[])
 
     return (
         <div className='Portfolio' id='page-2'>
                 <h1 id='name'>Shawn Smith</h1>
                 <p className='hr'></p>
                 <h4 id='role'>portfolio samples</h4>
-                <ul className='portfolio-list'>
-                    {cards}
-                </ul>             
+                <div className='carousel'>
+                    <button onClick={advanceCarousel}>&#10149;</button>           
+                    <ul className='portfolio-list'>
+                        {cards}
+                    </ul>  
+                    <button className='reverse-btn' onClick={reverseCarousel}>&#10150;</button>           
+
+                </div>
+
         </div>
     );
   }
