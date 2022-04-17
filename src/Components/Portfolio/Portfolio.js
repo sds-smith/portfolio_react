@@ -43,18 +43,21 @@ function Portfolio() {
 
     ])
 
-    const descriptions = [
+    const [descriptions, setDescriptions] = useState([
         'Connect to Spotify API, search songs, create custom playlist, and save playlist to your Spotify profile.',
         'Guess the secret word in six tries.',
         'Generate random unique password and copy to clipboard'
-    ]
+    ])
 
     const advanceCarousel = () => {
         setCards([cards[cards.length-1], ...cards.slice(0, cards.length-1)])
+        setDescriptions([descriptions[descriptions.length-1], ...descriptions.slice(0, descriptions.length-1)])
     }
 
     const reverseCarousel = () => {
         setCards([...cards.slice(1), cards[0]])
+        setDescriptions([...descriptions.slice(1), descriptions[0]])
+
     }
 
     useEffect(() => {
@@ -72,9 +75,8 @@ function Portfolio() {
                         {cards}
                     </ul>  
                     <button className='reverse-btn' onClick={reverseCarousel}>&#10150;</button>           
-
                 </div>
-
+                <h2 className='description'>{descriptions[1]}</h2>
         </div>
     );
   }
