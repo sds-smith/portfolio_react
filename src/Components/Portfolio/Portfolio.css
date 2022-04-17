@@ -131,4 +131,8 @@
         height: 65%;
         overflow-y: scroll;
     }
+
+    .portfolio-list li:nth-child(2) {
+        transform: none;
+    }
 }
