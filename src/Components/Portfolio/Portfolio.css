@@ -43,6 +43,10 @@
     margin: 0 1rem;
 }
 
+.portfolio-list li:nth-child(2) {
+    transform: scale(1.5);
+}
+
 .card-heading {
     display: flex;
     flex-direction: column;
@@ -57,8 +61,6 @@
 }
 
 .card {
-    width: 20rem;
-    height: 15rem;
     border-radius: 10%;
     display: flex;
     align-items: flex-end;
