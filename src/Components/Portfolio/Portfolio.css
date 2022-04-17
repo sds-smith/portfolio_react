@@ -161,7 +161,12 @@
         overflow-y: scroll;
     }
 
-    .portfolio-list li:nth-child(2) {
+    .portfolio-list li:nth-child(2),
+    .portfolio-list li:nth-child(2) .description {
         transform: none;
+    }
+
+    .carousel button {
+        display: none;
     }
 }
