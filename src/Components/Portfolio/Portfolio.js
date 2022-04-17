@@ -15,7 +15,6 @@ function Portfolio() {
                 <Link className='portfolio-link' id='atj' style={{color: 'rgb(64, 62, 37)'}} to={{ pathname: "https://assemblethejams.netlify.app" }} target="_blank" >Demo</Link>
                 <Link className='portfolio-link rm' id='atj-readme' style={{color: 'rgb(217, 213, 169)'}} to={{ pathname: "https://github.com/sds-smith/assemble-the-jams#readme"}} target='_blank'>About</Link>  
             </div>
-            <p className='description'>Connect to Spotify API, search songs, create custom playlist, and save playlist to your Spotify profile.</p>
         </li>,
 
         <li>
@@ -28,7 +27,6 @@ function Portfolio() {
                 <Link className='portfolio-link' id='WHRDL' style={{color: 'rgb(64, 62, 37)'}} to='/WHRDL' >Demo</Link>
                 <Link className='portfolio-link rm' id='WRDL-readme' style={{color: 'rgb(217, 213, 169)'}} to={{ pathname: "https://github.com/sds-smith/whrdl#readme"}} target='_blank'>About</Link>  
             </div>
-             <p className='description'>Guess the secret word in six tries.</p>
         </li>,
 
         <li>
@@ -41,10 +39,15 @@ function Portfolio() {
                 <Link className='portfolio-link' id='pwgen' style={{color: 'rgb(64, 62, 37)'}} to={{ pathname: "https://sds-smith.github.io/password_generator/" }} target="_blank" >Demo</Link>
                 <Link className='portfolio-link rm' id='pwgen-readme' style={{color: 'rgb(217, 213, 169)'}} to={{ pathname: "https://github.com/sds-smith/password_generator#readme"}} target='_blank'>About</Link>  
             </div>
-             <p className='description'>Generate random unique password and copy to clipboard</p>
         </li>     
 
     ])
+
+    const descriptions = [
+        'Connect to Spotify API, search songs, create custom playlist, and save playlist to your Spotify profile.',
+        'Guess the secret word in six tries.',
+        'Generate random unique password and copy to clipboard'
+    ]
 
     const advanceCarousel = () => {
         setCards([cards[cards.length-1], ...cards.slice(0, cards.length-1)])
