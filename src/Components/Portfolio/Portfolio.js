@@ -1,9 +1,10 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom'
 import './Portfolio.css'
 
 function Portfolio() {
 
-    const cards = [
+    const [cards, setCards] = useState([
         <li>
             <div className='card-heading'>
                 <h3>Playlist Creator</h3>
@@ -43,7 +44,7 @@ function Portfolio() {
              <p className='description'>Generate random unique password and{/* copy to clipboard*/}</p>
         </li>     
 
-    ]
+    ])
 
     return (
         <div className='Portfolio' id='page-2'>
