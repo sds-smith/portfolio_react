@@ -60,9 +60,9 @@ function Portfolio() {
 
     }
 
-    useEffect(() => {
-        reverseCarousel()
-    },[])
+    // useEffect(() => {
+        // reverseCarousel()
+    // },[])
 
     return (
         <div className='Portfolio' id='page-2'>
