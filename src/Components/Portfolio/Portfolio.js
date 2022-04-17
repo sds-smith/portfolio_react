@@ -70,7 +70,7 @@ function Portfolio() {
                 <p className='hr'></p>
                 <h4 id='role'>portfolio samples</h4>
                 <div className='carousel'>
-                    <button onClick={advanceCarousel}>&#10149;</button>           
+                    <button onClick={advanceCarousel}>&#10150;</button>  {/*&#10149*/}         
                     <ul className='portfolio-list'>
                         {cards}
                     </ul>  
