@@ -21,31 +21,47 @@
    background-image: linear-gradient(to right, rgb(139, 135, 95), black, rgb(139, 135, 95)); 
 }
 
-.centered-me {
-   position: absolute;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;     
+.form-container {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(255,255,255,.6);
+    height: 75vh;
+    width: 75vw; 
 }
 
 .form {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     justify-content: space-evenly;  
-    background-color: rgba(0,0,0,.6);
-    height: 50vh;
-    width: 350px;
-    border-radius: 5%;
+    padding: 5rem;
+    /* background-color: rgba(255,255,255,.6); */
+    height: 90%;
+    width: 40%;
+}
+
+.title {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3rem;
+    font-size: 3rem;
+    font-weight: 100;
+    color: rgba(64, 62, 37, .8);
+}
+
+#success {
+    font-size: 1.5rem;
 }
 
 .form input {
-    background-color: rgb(168, 165, 128);
-    width: 80%;
-    height: 1.75rem;
-    text-align: center;
-    border-radius: 5%;
+    all: unset;
+    width: 90%;
+    height: 2rem;
+    text-align: left;
+    border-bottom: 1px solid black;
 }
 
 .form input::placeholder {
@@ -57,15 +73,15 @@
 }
 
 .form textarea {
-    background-color: rgb(168, 165, 128);
-    width: 80%;
+    background-color: rgba(255,255,255, .6);
+    width: 90%;
     height: 6rem;
-    border-radius: 5%;
+    border: none;
 }
 
 .form textarea::placeholder {
     color: rgba(0,0,0,.75);
-    text-align: center;
+    text-align: left;
 }
 
 .form input:hover,
@@ -74,9 +90,9 @@
 }
 
 .form button {
-    background-color: rgb(217, 213, 169);
     height: 2rem;
-    border-radius: 15%;
+    width: 90%;
+    background-color: rgb(64, 62, 37);
     font-weight: bold;
 }
 

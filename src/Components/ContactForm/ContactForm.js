@@ -27,7 +27,7 @@ function ContactForm() {
                         "message": message
                      })
         })
-          .then(() => alert("Success! Your form has been submitted!"))
+          .then(() => document.getElementById('success').innerHTML = `Thank you, ${firstName}.<br/>Your form has been submitted.`)
           .catch(error => alert(error));
           document.querySelectorAll('.input').forEach(element => element.value = '')
 
@@ -40,19 +40,20 @@ function ContactForm() {
 
     return (
         <div className='ContactForm' >
-            <div className='centered-me'>
                 <h1 id='name'>Shawn Smith</h1>
-                <p className='hr'></p>
-                <h4 id='role'>contact</h4>
-                <form className='form' onSubmit={handleSubmit} >
-                    <input type='text' placeholder='Your First Name' name='first-name' value={firstName} className='input'required onChange={handleChangeFirstName}/>
-                    <input type='text' placeholder='Your Last Name' name='last-name' value={lastName} className='input'required onChange={handleChangeLastName}/>
-                    <input type='email' placeholder='Your Email Address' name='email' value={email} className='input'required onChange={handleChangeEmail}/>
-                    <textarea placeholder='Comments' name='message' value={message} className='input'required onChange={handleChangeMessage}/>
-                    <button type='submit'>SUBMIT</button>
-                </form> 
-            </div> 
-            
+                <div className='form-container'>
+                    <form className='form' onSubmit={handleSubmit} >
+                        <input type='text' placeholder='Your First Name' name='first-name' value={firstName} className='input'required onChange={handleChangeFirstName}/>
+                        <input type='text' placeholder='Your Last Name' name='last-name' value={lastName} className='input'required onChange={handleChangeLastName}/>
+                        <input type='email' placeholder='Your Email Address' name='email' value={email} className='input'required onChange={handleChangeEmail}/>
+                        <textarea placeholder='Share Your Thoughts' name='message' value={message} className='input'required onChange={handleChangeMessage}/>
+                        <button type='submit' style={{color: 'rgb(217, 213, 169)'}} >SUBMIT</button>
+                    </form> 
+                    <div className='title'>
+                        <h2>contact</h2>
+                        <h3 id='success'></h3>
+                    </div>
+                </div> 
         </div>
     );
   }
