@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useMediaQuery } from '../../util/customHooks'
 import './ContactForm.css'
 
 const encode = (data) => {
@@ -8,6 +9,9 @@ const encode = (data) => {
   }
 
 function ContactForm() {
+
+    let isMobile = useMediaQuery('(max-width: 1020px)')
+
 
     const [firstName, setFirstName] = useState('')
     const [lastName, setLastName] = useState('')
@@ -27,7 +31,14 @@ function ContactForm() {
                         "message": message
                      })
         })
-          .then(() => document.getElementById('success').innerHTML = `Thank you, ${firstName}.<br/>Your form has been submitted.`)
+          .then(() => {
+              const submitMsg = `Thank you, ${firstName}.\nYour form has been submitted.`
+              if (isMobile) {
+                  window.alert(submitMsg)
+              } else {
+                document.getElementById('success').innerHTML = `Thank you, ${firstName}.<br/>Your form has been submitted.`
+              }
+        })
           .catch(error => alert(error));
           document.querySelectorAll('.input').forEach(element => element.value = '')
 

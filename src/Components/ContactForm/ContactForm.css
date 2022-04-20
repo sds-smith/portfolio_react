@@ -99,12 +99,14 @@
     opacity: 70%;
 }
 
-@media screen and (max-width: 1020) {
+@media screen and (max-width: 1020px) {
     .form {
         width: 90%
     }
 
-    .title {
+    .title,
+    .title h2,
+    .title h3 {
         display: none;
     }
 }

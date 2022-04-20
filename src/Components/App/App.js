@@ -2,7 +2,6 @@
 import { useMediaQuery } from '../../util/customHooks'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import './App.css'
-// import backgroundVideo from '../../media/Sea - desktop 24216 (1).mp4'
 import backgroundVideo from '../../media/Sea - mobile 24216.mp4'
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
