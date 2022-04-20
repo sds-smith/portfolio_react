@@ -35,7 +35,6 @@
     align-items: left;
     justify-content: space-evenly;  
     padding: 5rem;
-    /* background-color: rgba(255,255,255,.6); */
     height: 90%;
     width: 40%;
 }
@@ -98,4 +97,14 @@
 
 .form button:hover {
     opacity: 70%;
+}
+
+@media screen and (max-width: 1020) {
+    .form {
+        width: 90%
+    }
+
+    .title {
+        display: none;
+    }
 }
