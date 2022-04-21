@@ -5,7 +5,14 @@ import './Certifications.css'
 function Certifications() {
 
     return (
-        <h1>Certifications</h1>
+        <div className='Certifications'>
+                <h1 id='name'>Shawn Smith</h1>
+                <p className='hr'></p>
+                <h4 id='role'>certifications</h4>
+                <div className='cert-container'>
+                    
+                </div>
+        </div>
     )
   }
   
