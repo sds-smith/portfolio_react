@@ -148,6 +148,17 @@
         margin-bottom: 5px;
     }
 
+    .btn-container {
+        display: flex;
+        justify-content: space-evenly;
+        width: 25%;
+    }
+
+    button {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
     .credentials {
         text-decoration: none;
         width: 6rem;
@@ -156,7 +167,7 @@
         color: rgb(64, 62, 37);
         text-align: center;
         line-height: 3rem;
-        font-size: 1.25rem;
+        font-size: 1rem;
         margin-bottom: .5rem;
         border-radius: 10%;
     }
@@ -168,6 +179,7 @@
     .rm {
         background-color: rgb(64, 62, 37);
     }
+
 
     .Resume {
         position: absolute;

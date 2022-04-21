@@ -96,8 +96,8 @@ function About() {
                         I am driven by the desire to be better today than yesterday, better tomorrow than today, and by the belief that the moment we stop learning, we stop living. I love to solve problems and I thrive in a fast-paced work environment.  
                 </p>
                 <div className='btn-container'>
-                    <button className='credentials'id='resumeBtn' onClick={toggleResume}>Resumé</button>
-                    <Link className='credentials rm' id='certLink' style={{color: 'rgb(217, 213, 169)'}}>Certifications</Link>
+                    <button className='credentials'id='resumeBtn' onClick={toggleResume}>Resume</button>
+                    <Link className='credentials rm' id='certLink' to={'/certifications'} style={{color: 'rgb(217, 213, 169)'}}>Certifications</Link>
                 </div>
                 <img src={Resume} className='Resume' id='resume' alt='Shawn Smith Resume' style={{height: resumeHeight + 'vh'}}/>
                 </div>
