@@ -47,7 +47,7 @@
     }
 
     .about-section {
-        margin: 0px 20px;
+        margin: 20px;
         height: 60%;
         padding-left: 10rem;
         font-family: 'IBM Plex Sans';
@@ -66,49 +66,85 @@
         color: rgb(217, 213, 169);
     }
 
-    .about-paragraph ul {
+    .skills-scroller {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .slider {
+        -webkit-appearance: none;
+        transform: rotate(90deg);
+        height: 3px;
+        border-radius: 5px;  
+        background: rgb(139, 135, 95);
+        outline: none;
+        opacity: 0.7;
+        -webkit-transition: .2s;
+        transition: opacity .2s;
+      }
+      
+      .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%; 
+        background: rgb(217, 213, 169);
+        border: 1px solid rgb(139, 135, 95);
+        cursor: pointer;
+      }
+      
+      .slider::-moz-range-thumb {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      
+
+    .skills-scroller ul {
         margin-left: 5%;
-        /* margin-right: 25%; */
         font-size: 1rem;
         font-family: 'IBM Plex Sans';
     }
 
-    .about-paragraph li:first-child {
+    .skills-scroller li:first-child {
         font-size: 1.0rem;
         opacity: 60%;
     }
 
-    .about-paragraph li:nth-child(2) {
+    .skills-scroller li:nth-child(2) {
         font-size: 1.25rem;
         opacity: 75%;
     }
 
-    .about-paragraph li:nth-child(3) {
+    .skills-scroller li:nth-child(3) {
         font-size: 2rem;
         color: rgb(217, 213, 169);
     }
 
-    .about-paragraph li:nth-child(4) {
+    .skills-scroller li:nth-child(4) {
         font-size: 1.25rem;
         opacity: 75%;
     }
 
-    .about-paragraph li:nth-child(5) {
+    .skills-scroller li:nth-child(5) {
         font-size: 1.0rem;
         opacity: 60%;
     }
 
-    .about-paragraph li:nth-child(6) {
+    .skills-scroller li:nth-child(6) {
         font-size: .5rem;
         opacity: 40%;
     }
 
-    .about-paragraph li:nth-child(7) {
+    .skills-scroller li:nth-child(7) {
         font-size: .25rem;
         opacity: 30%;
     }
 
-    .about-paragraph li {
+    .skills-scroller li {
         margin-bottom: 5px;
     }
 
@@ -129,6 +165,9 @@
 
         .about-section {
             height: 40%;
+            width: 90%;
+            margin: 0;
+            padding: 0
         }
 
 
@@ -141,8 +180,22 @@
             margin: 0;
         }
 
+        .about-paragraph {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .slider {
+            display: none;
+        }
+
         .about-paragraph ul {
             margin-left: 0;
             margin-right: 0;
+        }
+
+        .skills-scroller li:nth-child(3) {
+            font-size: 1.5rem;
         }
     }
