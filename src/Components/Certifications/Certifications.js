@@ -17,9 +17,33 @@ function Certifications() {
                 <h1 id='name'>Shawn Smith</h1>
                 <p className='hr'></p>
                 <h4 id='role'>certifications</h4>
-                <div className='cert-container'>
-                    <img src={} alt=''/>
-                </div>
+                <ul className='cert-container'>
+                    <li>
+                        <img src={Front_End} alt=''/>
+                    </li>
+                    <li>
+                        <img src={React_Native} alt=''/>
+                    </li>
+                    <li>
+                        <img src={React} alt=''/>
+                    </li>
+                    <li>
+                        <img src={Intermediate_Javascript} alt=''/>
+                    </li>
+                    <li>
+                        <img src={Javascript} alt=''/>
+                    </li>
+                    <li>
+                        <img src={Vue} alt=''/>
+                    </li>
+                    <li>
+                        <img src={HTML} alt=''/>
+                    </li>
+                    <li>
+                        <img src={Command_Line} alt=''/>
+                    </li>
+                    <li></li>
+                </ul>
         </div>
     )
   }
