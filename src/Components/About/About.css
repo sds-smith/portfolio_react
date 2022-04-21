@@ -58,7 +58,7 @@
         display: flex;
         flex-direction: column;
         height: 100%;
-        width: 80%;
+        width: 70%;
         overflow: scroll;
     }
 
@@ -67,46 +67,46 @@
     }
 
     .about-paragraph ul {
-        margin-left: 25%;
-        margin-right: 25%;
+        margin-left: 5%;
+        /* margin-right: 25%; */
         font-size: 1rem;
         font-family: 'IBM Plex Sans';
     }
 
-    /* .about-paragraph li:first-child { */
-        /* font-size: 1.0rem; */
-        /* opacity: 60%; */
-    /* } */
-/*  */
-    /* .about-paragraph li:nth-child(2) { */
-        /* font-size: 1.25rem; */
-        /* opacity: 75%; */
-    /* } */
-/*  */
-    /* .about-paragraph li:nth-child(3) { */
-        /* font-size: 2rem; */
-        /* color: rgb(217, 213, 169); */
-    /* } */
-/*  */
-    /* .about-paragraph li:nth-child(4) { */
-        /* font-size: 1.25rem; */
-        /* opacity: 75%; */
-    /* } */
-/*  */
-    /* .about-paragraph li:nth-child(5) { */
-        /* font-size: 1.0rem; */
-        /* opacity: 60%; */
-    /* } */
-/*  */
-    /* .about-paragraph li:nth-child(6) { */
-        /* font-size: .5rem; */
-        /* opacity: 40%; */
-    /* } */
-/*  */
-    /* .about-paragraph li:nth-child(7) { */
-        /* font-size: .25rem; */
-        /* opacity: 30%; */
-    /* } */
+    .about-paragraph li:first-child {
+        font-size: 1.0rem;
+        opacity: 60%;
+    }
+
+    .about-paragraph li:nth-child(2) {
+        font-size: 1.25rem;
+        opacity: 75%;
+    }
+
+    .about-paragraph li:nth-child(3) {
+        font-size: 2rem;
+        color: rgb(217, 213, 169);
+    }
+
+    .about-paragraph li:nth-child(4) {
+        font-size: 1.25rem;
+        opacity: 75%;
+    }
+
+    .about-paragraph li:nth-child(5) {
+        font-size: 1.0rem;
+        opacity: 60%;
+    }
+
+    .about-paragraph li:nth-child(6) {
+        font-size: .5rem;
+        opacity: 40%;
+    }
+
+    .about-paragraph li:nth-child(7) {
+        font-size: .25rem;
+        opacity: 30%;
+    }
 
     .about-paragraph li {
         margin-bottom: 5px;

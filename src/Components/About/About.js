@@ -6,24 +6,17 @@ import Resume from '../../media/Shawn_Smith_resume_04202022.png'
 function About() {
 
     const [skills, setSkills] = useState([
-                    ['li', 'Responsive Web Design'], 
-                    ['li', 'Dynamic Web Development and asynchronous code'], 
-                    ['li', 'JavaScript Algorithms and Data Structures'],
-                    ['li', 'Singly and Doubly Linked Lists'],
-                    ['li', 'Stacks and Queues'],
-                    ['li', 'Hash Maps'],
-                    ['li', 'Trees, Heaps,'],
-                    ['li', 'Graphs'],
-                    ['li', 'Object Oriented Programming'],
-                    ['li', 'TypeScript'],
-                    ['li', 'Front End Development Libraries:'],
-                    ['li', 'React.js'],
-                    ['li', 'Vue.js'],
-                    ['li', 'Single-page Web Apps'],
+                    ['li', 'Responsive Web Design with HTML5 and CSS3'], 
+                    ['li', 'Interactive Web Development with Javascript'], 
+                    ['li', 'Web APIs and Asynchronous Request Handling'],
+                    ['li', 'Javascript Algorithms and Data Structures'],
+                    ['li', 'Object-oriented and Functional Programming'],
+                    ['li', 'Single-page Web Apps with React.js'],
+                    ['li', 'Mobile Apps with React Native'],
+                    ['li', 'Git and GitHub'],
                     ['li', 'Web Accessibility'],
-                    ['li', 'Web APIs'],
-                    ['li', 'Node.js'],
-                    ['li', 'React Native'],
+                    ['li', 'oAuth 2.0 Authentication'],
+                    ['li', 'Search Engine Optimization']
                     ])
         
     useEffect(() => {
@@ -53,30 +46,18 @@ function About() {
                     <p>From my experience as a multi-unit restaurant leader, I bring soft skills like strong communication, collaboration, relationship-building, partnering and mentoring.  I bring over a decade of experience iterating, prototyping, and scaling an ever-changing operational model.</p>    
                     <p>From my ongoing studies in Web and Mobile Development, I have attained valuable technical skills, including:</p>    
                         <ul>
-                            <li>Responsive Web Design with HTML5 and CSS3</li>                        
-                            <li>Interactive Web Development with Javascript</li>                        
-                            <li>Web APIs and Asynchronous Request Handling</li>                        
-                            <li>Javascript Algorithms and Data Structures</li>                        
-                            <li>Object-oriented and Functional Programming</li>                        
-                            <li>Single-page Web Apps with React.js</li>                        
-                            <li>Mobile Apps with React Native</li>                        
-                            <li>Git and GitHub</li>                        
-                            <li>Web Accessibility</li>                        
-                            <li>oAuth 2.0 Authentication</li>                        
-                            <li>Search Engine Optimization</li>                        
+                            <li>{skills[0][1]}</li>
+                            <li>{skills[1][1]}</li>
+                            <li>{skills[2][1]}</li>
+                            <li>{skills[3][1]}</li>
+                            <li>{skills[4][1]}</li>
+                            <li>{skills[5][1]}</li>
+                            <li>{skills[6][1]}</li>
                         </ul>
                 <p>I recently attained a score of 725 on the General Coding Assessment administered by CodeSignal (815 on the practice test), and completed the Front End Engineer certification from Codecademy.
-                        I\’m driven by the desire to be better today than yesterday, better tomorrow than today. I love to solve problems and I thrive in a fast-paced work environment.  
+                        I am driven by the desire to be better today than yesterday, better tomorrow than today. I love to solve problems and I thrive in a fast-paced work environment.  
                     </p>
-                    {/* <ul> */}
-                        {/* <li>{skills[0][1]}</li> */}
-                        {/* <li>{skills[1][1]}</li> */}
-                        {/* <li>{skills[2][1]}</li> */}
-                        {/* <li>{skills[3][1]}</li> */}
-                        {/* <li>{skills[4][1]}</li> */}
-                        {/* <li>{skills[5][1]}</li> */}
-                        {/* <li>{skills[6][1]}</li> */}
-                    {/* </ul> */}
+
                     <img src={Resume} className='Resume'/>
                 </div>
             </div>               
