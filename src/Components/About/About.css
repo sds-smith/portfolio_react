@@ -229,4 +229,10 @@
         .skills-scroller li:nth-child(3) {
             font-size: 1.5rem;
         }
+
+        .Resume {
+            left: 0;
+            width: 100vw;
+            height: auto;
+        }
     }
