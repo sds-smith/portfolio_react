@@ -26,7 +26,6 @@ function About() {
                     ])
         
     useEffect(() => {
-
         const interval = setInterval(() => {
           setSkills([...skills.slice(1), skills[0]])
         }, 2000);
@@ -34,6 +33,7 @@ function About() {
     }, [skills]); 
 
     return (
+        <>
         <div className='About' id='page-3'>
             <div className='profile'>
                 <img src={Portrait} alt='handsome headshot'/>
@@ -52,31 +52,42 @@ function About() {
 
                 <div className='about-paragraph'>
 
-                    <p >After working most of my adult life in the restaurant industry, in 2021 I decided a career change was in order.</p>
-                    <p >With the support of my wife and family, I set myself down the path toward certification in Web Development.</p>
-                    <p >From my experience as a multi-unit restaurant leader, I bring soft skills like strong communication, collaboration, relationship-building.</p>
-                    <p >From my studies in Web Development, I have attained valuable technical skills, including:</p>
-                    <ul>
-                        <li>{skills[0][1]}</li>
-                        <li>{skills[1][1]}</li>
-                        <li>{skills[2][1]}</li>
-                        <li>{skills[3][1]}</li>
-                        <li>{skills[4][1]}</li>
-                        <li>{skills[5][1]}</li>
-                        <li>{skills[6][1]}</li>
-                    </ul>
-
+                    <p >After working most of my adult life in the restaurant industry, in 2021 I decided a career change was in order, and with the support of my wife and family, I set myself down the path toward a career in Web and Mobile Development.</p>
+                    <p>From my experience as a multi-unit restaurant leader, I bring soft skills like strong communication, collaboration, relationship-building, partnering and mentoring.  I bring over a decade of experience iterating, prototyping, and scaling an ever-changing operational model.</p>    
+                    <p>From my ongoing studies in Web and Mobile Development, I have attained valuable technical skills, including:</p>    
+                        <ul>
+                            <li>Responsive Web Design with HTML5 and CSS3</li>                        
+                            <li>Interactive Web Development with Javascript</li>                        
+                            <li>Web APIs and Asynchronous Request Handling</li>                        
+                            <li>Javascript Algorithms and Data Structures</li>                        
+                            <li>Object-oriented and Functional Programming</li>                        
+                            <li>Single-page Web Apps with React.js</li>                        
+                            <li>Mobile Apps with React Native</li>                        
+                            <li>Git and GitHub</li>                        
+                            <li>Web Accessibility</li>                        
+                            <li>oAuth 2.0 Authentication</li>                        
+                            <li>Search Engine Optimization</li>                        
+                        </ul>
+                <p>I recently attained a score of 725 on the General Coding Assessment administered by CodeSignal (815 on the practice test), and completed the Front End Engineer certification from Codecademy.
+                        I\’m driven by the desire to be better today than yesterday, better tomorrow than today. I love to solve problems and I thrive in a fast-paced work environment.  
+                    </p>
+                    {/* <ul> */}
+                        {/* <li>{skills[0][1]}</li> */}
+                        {/* <li>{skills[1][1]}</li> */}
+                        {/* <li>{skills[2][1]}</li> */}
+                        {/* <li>{skills[3][1]}</li> */}
+                        {/* <li>{skills[4][1]}</li> */}
+                        {/* <li>{skills[5][1]}</li> */}
+                        {/* <li>{skills[6][1]}</li> */}
+                    {/* </ul> */}
                 </div>
-                {/* <ul className='specialize'> */}
-                    {/* <li><img src={'media/HTML5_logo_black.svg.png'}></li> */}
-                    {/* <li><img src='media/css3-logo-black-and-white.png'></li> */}
-                    {/* <li><img src='media/cib-javascript.png'></li> */}
-                    {/* <li><img src='media/chrome-devtools-16x9_720.png'></li> */}
-                    {/* <li><img src='media/images.png'></li> */}
-                    {/* <li><img src='media/download.png'></li> */}
-                {/* </ul> */}
             </div>               
         </div>
+        <div className='Resume'>
+
+        </div>        
+        </>
+
     );
   }
   
