@@ -1,6 +1,7 @@
 import { useState, useEffect  } from 'react';
 import './About.css'
 import Portrait from '../../media/portrait.jpeg'
+import Resume from '../../media/Shawn_Smith_resume_04202022.png'
 
 function About() {
 
@@ -33,7 +34,6 @@ function About() {
     }, [skills]); 
 
     return (
-        <>
         <div className='About' id='page-3'>
             <div className='profile'>
                 <img src={Portrait} alt='handsome headshot'/>
@@ -45,10 +45,7 @@ function About() {
             </div>
 
             <div className='about-section'>
-                <div className='about-title'>
-                    <h3 >About:</h3>
 
-                </div>
 
                 <div className='about-paragraph'>
 
@@ -80,14 +77,10 @@ function About() {
                         {/* <li>{skills[5][1]}</li> */}
                         {/* <li>{skills[6][1]}</li> */}
                     {/* </ul> */}
+                    <img src={Resume} className='Resume'/>
                 </div>
             </div>               
         </div>
-        <div className='Resume'>
-
-        </div>        
-        </>
-
     );
   }
   
