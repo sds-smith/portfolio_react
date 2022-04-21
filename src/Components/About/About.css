@@ -148,12 +148,31 @@
         margin-bottom: 5px;
     }
 
+    .credentials {
+        text-decoration: none;
+        width: 6rem;
+        height: 3rem;
+        background-color: rgb(217, 213, 169);
+        color: rgb(64, 62, 37);
+        text-align: center;
+        line-height: 3rem;
+        font-size: 1.25rem;
+        margin-bottom: .5rem;
+        border-radius: 10%;
+    }
+
+    .credentials:hover {
+        opacity: 60%;
+    }
+
+    .rm {
+        background-color: rgb(64, 62, 37);
+    }
+
     .Resume {
         position: absolute;
-        display: none;
         bottom: 3vh;
         left: 30vw;
-        height: 95vh;
         width: auto;
         z-index: 10;
     }

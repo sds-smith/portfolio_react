@@ -11,6 +11,7 @@ import Portfolio from '../Portfolio/Portfolio'
 import About from '../About/About'
 import ContactForm from '../ContactForm/ContactForm'
 import WHRDL from '../WHRDL/WHRDL'
+import Certifications from '../Certifications/Certifications'
 
 function App() {
 
@@ -52,6 +53,9 @@ function App() {
           <WHRDL />
         </Route>
 
+        <Route path='/certifications'>
+          <Certifications />
+        </Route>
       </Router>
   );
 }

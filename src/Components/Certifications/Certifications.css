@@ -1,0 +1,172 @@
+.Portfolio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(109, 134, 140,.9);
+    font-family: 'Nanum Gothic Coding', sans-serif;
+    color: rgb(64, 62, 37);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 5rem;
+    width: 100%;
+    height: 100%;
+    overflow: none;
+
+}
+
+.Portfolio .hr {
+   display: block;
+   margin: 0.5em auto;
+   height: 0.125rem;
+   width: 17.5rem; 
+   background-image: linear-gradient(to right, rgba(109, 134, 140,.9), black, rgba(109, 134, 140,.9)); 
+}
+
+.carousel {
+   display: flex;
+   align-items: center;
+}
+
+.carousel button {
+   border: none;
+   height: 3rem;
+   font-size: 3rem;
+   color:rgb(64, 62, 37);
+   background-color: rgba(109, 134, 140, .2);
+}
+
+.carousel button:hover {
+   opacity: 60%;
+}
+
+.reverse-btn {
+   transform: rotate(180deg);
+   padding-bottom: 15rem;
+}
+
+.portfolio-list {
+   padding-top: 5rem;
+   padding-left: 0;
+   width: 95%;
+   display: flex;
+   justify-content: center;
+}
+
+.portfolio-list li {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   height: 15rem;
+   width: 20rem;
+   margin: 0 1rem;
+   overflow: visible;
+}
+
+.portfolio-list li:nth-child(2) {
+   transform: scale(1.5);
+}
+
+.portfolio-list li:nth-child(2) .description {
+   transform: scale(.75);
+}
+
+.card-heading {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: flex-start;
+   height: 10rem;
+}
+
+.card-heading h3,
+.card-heading p {
+   margin: 0;
+}
+
+.card {
+   border-radius: 10%;
+   display: flex;
+   align-items: flex-end;
+   justify-content: space-around;
+}
+
+.portfolio-link {
+   text-decoration: none;
+   width: 6rem;
+   height: 3rem;
+   background-color: rgb(217, 213, 169);
+   text-align: center;
+   line-height: 3rem;
+   font-size: 1.25rem;
+   margin-bottom: .5rem;
+   border-radius: 10%;
+}
+
+.portfolio-link:visited {
+   text-decoration: none;
+   color: black;
+}
+
+.portfolio-link:hover {
+   opacity: 60%;
+}
+
+.rm {
+   background-color: rgb(64, 62, 37);
+}
+
+#atj-card {
+   background-image: url(../../media/atj.png);
+   background-repeat: no-repeat;
+   background-size:cover;
+   background-position: center;
+}
+
+#WHRDL-card {
+   background-image: url(../../media/WHRDL_iOS.png);
+   background-repeat: no-repeat;
+   background-size:cover;
+   background-position: center;
+}
+
+#rpg-card {
+   background-image: url(../../media/rpg.png);
+   background-repeat: no-repeat;
+   background-size:cover;
+   background-position: center;
+}
+
+.description {
+   padding: 0;
+   margin-top: 5rem;
+   width: 10rem;
+   height: auto;
+   text-align: center;
+}
+
+@media only screen and (max-width : 1020px) and (orientation: portrait) {
+   .Portfolio {
+       padding-top: 3rem;
+   }
+
+   .portfolio-list {
+       flex-direction: column;
+       align-items: center;
+       padding-top: 0;
+       justify-content: flex-start;
+       height: 65%;
+       overflow-y: scroll;
+   }
+
+   .portfolio-list li:nth-child(2),
+   .portfolio-list li:nth-child(2) .description {
+       transform: none;
+   }
+
+   .carousel button {
+       display: none;
+   }
+}
