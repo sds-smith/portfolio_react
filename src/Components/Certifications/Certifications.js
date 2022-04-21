@@ -19,27 +19,35 @@ function Certifications() {
                 <h4 id='role'>certifications</h4>
                 <ul className='cert-container'>
                     <li>
+                        <h3>Front End Engineer</h3>
                         <img src={Front_End} alt=''/>
                     </li>
                     <li>
+                        <h3>React Native</h3>
                         <img src={React_Native} alt=''/>
                     </li>
                     <li>
+                        <h3>React</h3>
                         <img src={React} alt=''/>
                     </li>
                     <li>
+                        <h3>Intermediate Javascript</h3>
                         <img src={Intermediate_Javascript} alt=''/>
                     </li>
                     <li>
+                        <h3>Javascript</h3>
                         <img src={Javascript} alt=''/>
                     </li>
                     <li>
+                        <h3>Vue</h3>
                         <img src={Vue} alt=''/>
                     </li>
                     <li>
+                        <h3>HTML</h3>
                         <img src={HTML} alt=''/>
                     </li>
                     <li>
+                        <h3>Command Line</h3>
                         <img src={Command_Line} alt=''/>
                     </li>
                     <li></li>
