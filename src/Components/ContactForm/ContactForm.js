@@ -12,11 +12,13 @@ function ContactForm() {
 
     let isMobile = useMediaQuery('(max-width: 1020px)')
 
-
     const [firstName, setFirstName] = useState('')
     const [lastName, setLastName] = useState('')
     const [email, setEmail] = useState('')
     const [message, setMessage] = useState('')
+
+    const thankyou = `Thank you, ${firstName}.`
+    const submitted = 'Your form has been submitted.'
 
     const handleSubmit = e => {
         e.preventDefault();
@@ -32,11 +34,12 @@ function ContactForm() {
                      })
         })
           .then(() => {
-              const submitMsg = `Thank you, ${firstName}.\nYour form has been submitted.`
               if (isMobile) {
-                  window.alert(submitMsg)
+                  window.alert(thankyou + '\n' + submitted)
               } else {
-                document.getElementById('success').innerHTML = `Thank you, ${firstName}.<br/>Your form has been submitted.`
+                document.getElementById('thankyou').style.display = 'block'
+                document.getElementById('submitted').style.display = 'block'
+
               }
         })
           .catch(error => alert(error));
@@ -62,7 +65,9 @@ function ContactForm() {
                     </form> 
                     <div className='title'>
                         <h2>contact</h2>
-                        <h3 id='success'></h3>
+                        <h3 className='success' id='thankyou'>{thankyou}</h3>
+                        <h3 className='success' id='submitted'>{submitted}</h3>
+
                     </div>
                 </div> 
         </div>
