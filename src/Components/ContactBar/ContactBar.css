@@ -49,7 +49,6 @@
 .contact-info:hover h5 {
     transform: scale(.5);
     transition-duration: 500ms;
-    /* margin-right: 25px; */
 }
 
 .contact-link {
