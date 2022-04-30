@@ -5,6 +5,7 @@ import './App.css'
 import backgroundVideo from '../../media/Sea - mobile 24216.mp4'
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
+import CircleMenu from '../CircleMenu/CircleMenu'
 import ContactBar from '../ContactBar/ContactBar'
 import BusinessCard from '../BusinessCard/BusinessCard';
 import Portfolio from '../Portfolio/Portfolio'
@@ -25,6 +26,10 @@ function App() {
           <Header />
         </Route>
 
+        <Route>
+          <CircleMenu isMobile={isMobile}/>
+        </Route>
+        
         <Route>
           <ContactBar isMobile={isMobile}/>
         </Route>

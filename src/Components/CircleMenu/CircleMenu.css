@@ -1,0 +1,17 @@
+#circle_menu {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    top: 40vh;
+    z-index: 10;
+    /* height: auto;
+    width: 14rem;  */
+}
+
+.circle_menu img {
+    height: 12rem;
+    width: auto;
+}
