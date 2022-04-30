@@ -6,8 +6,8 @@
     position: fixed;
     right: 0;
     top: 43vh;
-    height: auto;
-    width: 14rem; 
+    height: 8rem;
+    width: 12rem; 
     padding-top: 0;
     padding-right: 10px;
     border-top-left-radius: 33% 50%;
@@ -33,17 +33,23 @@
     transition-duration: 500ms;
 }
 
+.icon_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
 .side-nav,
 .contact-info h5 {
     transition-duration: 500ms;
-    margin: 10px;
+    
 }
 
 .contact-info:hover .side-nav,
 .contact-info:hover h5 {
-    transform: scale(.6);
+    transform: scale(.5);
     transition-duration: 500ms;
-    margin-right: 25px;
+    /* margin-right: 25px; */
 }
 
 .contact-link {
@@ -55,7 +61,7 @@
 }
 
 .icon {
-    display: none;
+    display: flex;
     height: 1rem;
     width: auto;
     margin-left: 10px;
