@@ -67,7 +67,7 @@ function About() {
                 <div className='name-title'>
                     <h1 id='name'>Shawn Smith</h1>
                     <p className='hr'></p>
-                    <h4  id='role'>front-end web developer</h4> 
+                    <h4  id='role'>web and mobile developer</h4> 
                 </div>
             </div>
 

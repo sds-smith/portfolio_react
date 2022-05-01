@@ -7,7 +7,7 @@ function BusinessCard() {
             <div className='centered-me'>
                 <Link to='/about' className='link'>Shawn Smith</Link>            
                 <p className='hr'></p>
-                <h4  id='role'>front-end web developer</h4>
+                <h4  id='role'>web and mobile developer</h4>
             </div>
                 
         </div>
