@@ -19,7 +19,7 @@ function ContactBar(props) {
 
     return (
         <div className='contact-info' id='contact'>
-            <Link to='/contact_form' className='side-nav' onClick={toggleContact}><img src={contact_icon}/> contact:</Link>
+            <Link to='/contact_form' className='side-nav' onClick={toggleContact}><img src={contact_icon} alt='link to contact form' />contact:</Link>
             <div className='icon_container'>
                 <h5><a className='contact-link'href='mailto:sds.smith24@gmail.com' id='email'   onClick={toggleContact}><img className='icon' src={email_icon} alt='email icon for sds.smith24@gmail.com'/></a></h5>
                 <h5><a className='contact-link'href='https://www.linkedin.com/in/shawn-smith-3379ab13/' target='_blank'  rel="noreferrer" onClick={toggleContact}><img className='icon' src={linkedin_icon} alt='linkedin icon for linkedin.com/shawn-smith'/></a></h5>

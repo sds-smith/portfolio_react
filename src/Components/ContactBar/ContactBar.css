@@ -1,11 +1,11 @@
 #contact {
-    display: flex;
-    flex-direction: column;
-    text-align: right;
-    justify-content: center;
     position: fixed;
     right: 0;
     top: 43vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 8rem;
     width: 12rem; 
     padding-top: 0;
@@ -27,6 +27,12 @@
     color: black;
 }
 
+.side-nav img {
+    height: 1.25rem;
+    width: auto;
+    display: none;
+}
+
 #contact:hover {
     background-color: rgb(217, 213, 169);
     transform: scale(2);
@@ -45,10 +51,12 @@
     
 }
 
-.contact-info:hover .side-nav,
-.contact-info:hover h5 {
-    transform: scale(.5);
-    transition-duration: 500ms;
+.contact-info:hover .icon_container {
+    margin-right: 1rem;
+}
+
+.contact-info:hover .side-nav img {
+    display: flex;
 }
 
 .contact-link {

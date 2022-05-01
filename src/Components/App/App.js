@@ -6,6 +6,7 @@ import backgroundVideo from '../../media/Sea - mobile 24216.mp4'
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
 import CircleMenu from '../CircleMenu/CircleMenu'
+import CircleMenuBlack from '../CircleMenuBlack/CircleMenuBlack'
 import ContactBar from '../ContactBar/ContactBar'
 import BusinessCard from '../BusinessCard/BusinessCard';
 import Portfolio from '../Portfolio/Portfolio'
@@ -25,24 +26,23 @@ function App() {
         <Route >
           <Header />
         </Route>
-
-        <Route>
-          <CircleMenu isMobile={isMobile}/>
-        </Route>
         
         <Route>
           <ContactBar isMobile={isMobile}/>
         </Route>
 
         <Route exact path='/'>
+          <CircleMenu isMobile={isMobile}/>
           <BusinessCard />
         </Route>
 
         <Route path='/portfolio'>
+          <CircleMenuBlack isMobile={isMobile}/>
           <Portfolio />
         </Route>
 
         <Route path='/about'>
+          <CircleMenu isMobile={isMobile}/>
           <About />
         </Route>
 
@@ -51,10 +51,12 @@ function App() {
         </Route>  
 
         <Route path='/contact_form'>
+          <CircleMenuBlack isMobile={isMobile}/>
           <ContactForm />
         </Route>  
 
         <Route path='/WHRDL'>
+          <CircleMenuBlack isMobile={isMobile}/>
           <WHRDL />
         </Route>
 

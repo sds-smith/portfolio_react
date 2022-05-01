@@ -30,9 +30,9 @@
     transition-duration: 500ms;
 }
 
-.circle-nav-items {
+.circle-nav-items-black {
     text-decoration: none;
-    color:rgb(139, 135, 95);
+    color:rgb(64, 62, 37);
 }
 
 .circle_menu:hover .circle_icon {
@@ -43,8 +43,7 @@
     display: flex;
 }
 
-.circle_menu:hover .circle-nav-items {
-    color: rgb(217, 213, 169);
+.circle_menu:hover .circle-nav-items-black {
     transform: scale(.75);
     transition-duration: 500ms;
 }

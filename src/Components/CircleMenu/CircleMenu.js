@@ -1,25 +1,19 @@
 import './CircleMenu.css'
-import { Link } from 'react-router-dom'
-import email_icon from '../../media/email_icon.png'
-import linkedin_icon from '../../media/linkedin_icon.png'
-import github_icon from '../../media/github_icon.png'
-import phone_icon from '../../media/phone_icon.png'
 import circleMenu from '../../media/circle_menu.png'
+import { NavLink } from 'react-router-dom'
 
 function CircleMenu(props) {
 
-    const toggleContact = () => {
-        if (props.isMobile) {
-            const contact = document.getElementById('contact')
-            const contactButton = document.getElementById('contactMobile')
-            contact.style.display = 'none'
-            contactButton.style.fontWeight = 'normal'
-        }
-    }
-
     return (
         <div className='circle_menu' id='circle_menu'>
-            <img src={circleMenu} alt=''/>
+            <img src={circleMenu} className='circle_icon' alt='circle menu'/>
+            <div className='circle_nav' id='circle_nav'>
+                <NavLink to='/' exact className='circle-nav-items'activeClassName='active' >Home</NavLink>
+                <NavLink to='/portfolio' className='circle-nav-items'activeClassName='active' >Portfolio</NavLink>
+                <NavLink to='/about' className='circle-nav-items'activeClassName='active' >About</NavLink>  
+                <NavLink to='/contact_form' className='circle-nav-items'>Contact</NavLink>
+
+            </div>  
         </div>
     );
   }
