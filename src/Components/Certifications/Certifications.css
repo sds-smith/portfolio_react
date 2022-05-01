@@ -50,21 +50,34 @@
 }
 
 .cert-container ul {
+  list-style: none;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+
+.freecodecamp ul {
+  padding: 0;
+}
+
   .cert-container li {
     display: flex;
-    flex-direction: row-reverse;
     justify-content: flex-end;
     margin: 5px;
     height: 3rem;
     width: auto;
   }
 
+  .codecademy li {
+    flex-direction: row-reverse;
+  }
+
   .cert-container h3 {
       margin: 5px;
+  }
+
+  .freecodecamp h3 {
+    text-align: right;
   }
   
   img {
