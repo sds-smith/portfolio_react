@@ -21,13 +21,11 @@
 .circle_icon {
     height: 6rem;
     width: 6rem;
-    transition-duration: 500ms;
 }
 
 .circle_nav {
     display: none;
     flex-direction: column;
-    transition-duration: 500ms;
 }
 
 .circle-nav-items {
@@ -47,4 +45,10 @@
     color: rgb(217, 213, 169);
     transform: scale(.75);
     transition-duration: 500ms;
+}
+
+@media only screen and (orientation: portrait) {
+    #circle_menu {
+        display : none;
+    }
 }

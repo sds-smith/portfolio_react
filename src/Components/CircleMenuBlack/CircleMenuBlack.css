@@ -47,3 +47,9 @@
     transform: scale(.75);
     transition-duration: 500ms;
 }
+
+@media only screen and (orientation: portrait) {
+    #circle_menu {
+        display : none;
+    }
+}
