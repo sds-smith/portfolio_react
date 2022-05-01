@@ -61,6 +61,7 @@ function App() {
         </Route>
 
         <Route path='/certifications'>
+          <CircleMenuBlack isMobile={isMobile}/>
           <Certifications />
         </Route>
       </Router>
