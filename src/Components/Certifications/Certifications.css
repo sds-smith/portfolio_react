@@ -23,21 +23,28 @@
 }
 
 .cert-container {
-    position: absolute;
-    top: 0;
-    left: 10rem;
-    padding-top: 3rem;
     width: 15%;
-    height: 90%;
     max-height: 100%;
-    /* overflow-y: scroll; */
-    /* overflow-x:visible; */
     display: flex;
     flex-direction: column;
     list-style: none;
     margin: 0;
 }
-  
+ 
+.codecademy {
+  position: absolute;
+  top: 10%;
+  left: 10rem;
+  height: 90%;
+}
+
+.freecodecamp {
+  position: absolute;
+  top: 10%;
+  right: 10rem;
+  height: 30%;
+}
+
 .cert-container h2 {
   text-align: center;
 }
@@ -54,7 +61,6 @@
     margin: 5px;
     height: 3rem;
     width: auto;
-    overflow: visible;
   }
 
   .cert-container h3 {
@@ -67,7 +73,6 @@
     object-fit: cover;
     vertical-align: bottom;
     transition: all .2s ease-in-out;
-
   }
 
   .cert-container img:hover {

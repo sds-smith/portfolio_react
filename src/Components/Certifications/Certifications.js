@@ -8,6 +8,8 @@ import Javascript from '../../media/certifications/Javascript_Codecademy.png'
 import React from '../../media/certifications/React_Codecademy.png'
 import React_Native from '../../media/certifications/React_Native_Codecademy.png'
 import Vue from '../../media/certifications/Vue_Codecademy.png'
+import Responsive_Design from '../../media/certifications/Responsive_Web_FCC.png'
+import JavascriptFCC from '../../media/certifications/Javascript_Algorithms_Data_Structures_FCC.png'
 
 
 function Certifications() {
@@ -47,7 +49,7 @@ function Certifications() {
                 <h1 id='name'>Shawn Smith</h1>
                 <p className='hr'></p>
                 <h4 id='role'>certifications</h4>
-                <div className='cert-container'>
+                <div className='codecademy cert-container'>
                     <h2>Codecademy Certifications</h2>
                     <ul >
                         <li>
@@ -132,7 +134,31 @@ function Certifications() {
                         </li>
                     </ul>
                 </div>
-
+                <div className='freecodecamp cert-container'>
+                    <h2>FreeCodeCamp Certifications</h2>
+                    <ul >
+                        <li>
+                            <h3>Responsive Design</h3>
+                            <img 
+                                src={Responsive_Design} 
+                                alt='responsive design certification'
+                                onMouseEnter={clickMessage}
+                                onMouseOut={rmClickMessage}
+                                onClick={()=>frameThis(Responsive_Design)}
+                            />
+                        </li>
+                        <li>
+                            <h3>Javascript Algorithms and Data Structures</h3>
+                            <img 
+                                src={JavascriptFCC} 
+                                alt='Javascript algorithms and data structures certification'
+                                onMouseEnter={clickMessage}
+                                onMouseOut={rmClickMessage}
+                                onClick={()=>frameThis(JavascriptFCC)}
+                            />
+                        </li>
+                    </ul>
+                </div>
                 <div className='highlight' id='highlight'></div>
         </div>
     )
