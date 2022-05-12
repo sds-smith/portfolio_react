@@ -8,6 +8,7 @@ import Javascript from '../../media/certifications/Javascript_Codecademy.png'
 import React from '../../media/certifications/React_Codecademy.png'
 import React_Native from '../../media/certifications/React_Native_Codecademy.png'
 import Vue from '../../media/certifications/Vue_Codecademy.png'
+import NodeJS from '../../media/certifications/NodeJS_Codecademy.png'
 import Responsive_Design from '../../media/certifications/Responsive_Web_FCC.png'
 import JavascriptFCC from '../../media/certifications/Javascript_Algorithms_Data_Structures_FCC.png'
 
@@ -130,6 +131,16 @@ function Certifications() {
                                 onMouseEnter={clickMessage}
                                 onMouseOut={rmClickMessage}
                                 onClick={()=>frameThis(Command_Line)}
+                            />
+                        </li>
+                        <li>
+                            <h3>NodeJS</h3>
+                            <img 
+                                src={NodeJS} 
+                                alt='node js certificate'
+                                onMouseEnter={clickMessage}
+                                onMouseOut={rmClickMessage}
+                                onClick={()=>frameThis(NodeJS)}
                             />
                         </li>
                     </ul>
