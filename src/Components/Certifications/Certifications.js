@@ -11,6 +11,7 @@ import Vue from '../../media/certifications/Vue_Codecademy.png'
 import NodeJS from '../../media/certifications/NodeJS_Codecademy.png'
 import Responsive_Design from '../../media/certifications/Responsive_Web_FCC.png'
 import JavascriptFCC from '../../media/certifications/Javascript_Algorithms_Data_Structures_FCC.png'
+import oAuth_2 from '../../media/certifications/oAuth_2.0_Udemy.jpeg'
 
 
 function Certifications() {
@@ -166,6 +167,21 @@ function Certifications() {
                                 onMouseEnter={clickMessage}
                                 onMouseOut={rmClickMessage}
                                 onClick={()=>frameThis(JavascriptFCC)}
+                            />
+                        </li>
+                    </ul>
+                </div>
+                <div className='udemy cert-container'>
+                    <h2>Udemy Certifications</h2>
+                    <ul >
+                        <li>
+                            <h3>oAuth 2.0</h3>
+                            <img 
+                                src={oAuth_2} 
+                                alt='oAuth 2.0 certification'
+                                onMouseEnter={clickMessage}
+                                onMouseOut={rmClickMessage}
+                                onClick={()=>frameThis(oAuth_2)}
                             />
                         </li>
                     </ul>

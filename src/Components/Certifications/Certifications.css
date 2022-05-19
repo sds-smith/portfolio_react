@@ -45,6 +45,13 @@
   height: 30%;
 }
 
+.udemy {
+  position: absolute;
+  bottom: 10%;
+  right: 10rem;
+  height: 30%;
+}
+
 .cert-container h2 {
   text-align: center;
 }
