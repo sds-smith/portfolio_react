@@ -14,7 +14,7 @@ function Portfolio() {
             <div className='card' id='atj-card'>
                 <Link className='portfolio-link rm' id='atj-video' style={{color: 'rgb(217, 213, 169)'}} to={{ pathname: "https://youtu.be/fMgUQI0HRTk"}} target='_blank'>View Demo</Link>  
                 <Link className='portfolio-link' id='atj' style={{color: 'rgb(64, 62, 37)'}} to={{ pathname: "https://assemblethejams.netlify.app" }} target="_blank" >Open App</Link>
-                <Link className='portfolio-link rm' id='atj-readme' style={{color: 'rgb(217, 213, 169)'}} to={{ pathname: "https://github.com/sds-smith/assemble-the-jams#readme"}} target='_blank'>More Info</Link>  
+                <Link className='portfolio-link rm' id='atj-readme' style={{color: 'rgb(217, 213, 169)'}} to={{ pathname: "https://github.com/sds-smith/assemble-the-jams/blob/main/README.md"}} target='_blank'>More Info</Link>  
            
             </div>
         </li>,
