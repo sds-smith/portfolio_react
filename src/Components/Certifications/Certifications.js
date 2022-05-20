@@ -12,6 +12,7 @@ import NodeJS from '../../media/certifications/NodeJS_Codecademy.png'
 import Responsive_Design from '../../media/certifications/Responsive_Web_FCC.png'
 import JavascriptFCC from '../../media/certifications/Javascript_Algorithms_Data_Structures_FCC.png'
 import oAuth_2 from '../../media/certifications/oAuth_2.0_Udemy.jpeg'
+import Express from '../../media/certifications/Express_Codecademy.png'
 
 
 function Certifications() {
@@ -142,6 +143,16 @@ function Certifications() {
                                 onMouseEnter={clickMessage}
                                 onMouseOut={rmClickMessage}
                                 onClick={()=>frameThis(NodeJS)}
+                            />
+                        </li>
+                        <li>
+                            <h3>Express</h3>
+                            <img 
+                                src={Express} 
+                                alt='node js certificate'
+                                onMouseEnter={clickMessage}
+                                onMouseOut={rmClickMessage}
+                                onClick={()=>frameThis(Express)}
                             />
                         </li>
                     </ul>
