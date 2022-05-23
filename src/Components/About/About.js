@@ -17,7 +17,8 @@ function About() {
                     'Git and GitHub',
                     'Web Accessibility',
                     'oAuth 2.0 Authentication',
-                    'Search Engine Optimization'
+                    'Node.js',
+                    'Express.js'
                     ])
     const [scrollerInterval, setScrollerInterval] = useState(2000)
     const [resumeHeight, setResumeHeight] = useState(0)
