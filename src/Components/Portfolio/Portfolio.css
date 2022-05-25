@@ -143,6 +143,13 @@
     background-position: center;
 }
 
+#weather-card {
+    background-image: url(../../media/weather.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+
 .description {
     padding: 0;
     margin-top: 5rem;

@@ -41,14 +41,26 @@ function Portfolio() {
                 <Link className='portfolio-link' id='pwgen' style={{color: 'rgb(64, 62, 37)'}} to={{ pathname: "https://sds-smith.github.io/password_generator/" }} target="_blank" >Open App</Link>
                 <Link className='portfolio-link rm' id='pwgen-readme' style={{color: 'rgb(217, 213, 169)'}} to={{ pathname: "https://github.com/sds-smith/password_generator#readme"}} target='_blank'>More Info</Link>  
             </div>
-        </li>     
+        </li>,
 
+        <li>
+            <div className='card-heading'>
+                <h3>Weather App</h3>
+                <p>Vue single-page web app</p>
+            </div>
+
+            <div className='card' id='weather-card'>
+                <Link className='portfolio-link' id='weather' style={{color: 'rgb(64, 62, 37)'}} to={{ pathname: "https://sds-smith.github.io/weather/" }} target="_blank" >Open App</Link>
+                <Link className='portfolio-link rm' id='weather-readme' style={{color: 'rgb(217, 213, 169)'}} to={{ pathname: "https://github.com/sds-smith/password_generator#readme"}} target='_blank'>More Info</Link>  
+            </div>
+        </li>  
     ])
 
     const [descriptions, setDescriptions] = useState([
         'Connect to your Spotify Premium account, execute searches and receive search term matches and recommendations, play/pause a song, like/ unlike songs, create custom playlist, and save playlist to your Spotify profile.',
         'Clone of a popular word game. Guess the secret word in six tries. Reset game, get hints',
-        'Generate random unique password and copy to clipboard'
+        'Generate random unique password and copy to clipboard',
+        'Search by City/ State/ Country, or by longitudinal coordinates, and receive up-to-the-minute weather data'
     ])
 
     const advanceCarousel = () => {
@@ -74,7 +86,7 @@ function Portfolio() {
                 <div className='carousel'>
                     <button onClick={advanceCarousel}>&#10150;</button>  {/*&#10149*/}         
                     <ul className='portfolio-list'>
-                        {cards}
+                        {cards.slice(0, 3)}
                     </ul>  
                     <button className='reverse-btn' onClick={reverseCarousel}>&#10150;</button>           
                 </div>
