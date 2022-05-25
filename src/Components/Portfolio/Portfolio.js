@@ -27,7 +27,7 @@ function Portfolio() {
 
             <div className='card' id='WHRDL-card'>
                 <Link className='portfolio-link' id='WHRDL' style={{color: 'rgb(64, 62, 37)'}} to='/WHRDL' >Open App</Link>
-                <Link className='portfolio-link rm' id='WRDL-readme' style={{color: 'rgb(217, 213, 169)'}} to={{ pathname: "https://github.com/sds-smith/whrdl#readme"}} target='_blank'>More Info</Link>  
+                <Link className='portfolio-link rm' id='WRDL-readme' style={{color: 'rgb(217, 213, 169)'}} to={{ pathname: "https://github.com/sds-smith/whrdl/blob/master/README.md"}} target='_blank'>More Info</Link>  
             </div>
         </li>,
 
@@ -39,7 +39,7 @@ function Portfolio() {
 
             <div className='card' id='rpg-card'>
                 <Link className='portfolio-link' id='pwgen' style={{color: 'rgb(64, 62, 37)'}} to={{ pathname: "https://sds-smith.github.io/password_generator/" }} target="_blank" >Open App</Link>
-                <Link className='portfolio-link rm' id='pwgen-readme' style={{color: 'rgb(217, 213, 169)'}} to={{ pathname: "https://github.com/sds-smith/password_generator#readme"}} target='_blank'>More Info</Link>  
+                <Link className='portfolio-link rm' id='pwgen-readme' style={{color: 'rgb(217, 213, 169)'}} to={{ pathname: "https://github.com/sds-smith/password_generator/blob/master/README.md"}} target='_blank'>More Info</Link>  
             </div>
         </li>,
 
@@ -51,7 +51,7 @@ function Portfolio() {
 
             <div className='card' id='weather-card'>
                 <Link className='portfolio-link' id='weather' style={{color: 'rgb(64, 62, 37)'}} to={{ pathname: "https://sds-smith.github.io/weather/" }} target="_blank" >Open App</Link>
-                <Link className='portfolio-link rm' id='weather-readme' style={{color: 'rgb(217, 213, 169)'}} to={{ pathname: "https://github.com/sds-smith/password_generator#readme"}} target='_blank'>More Info</Link>  
+                <Link className='portfolio-link rm' id='weather-readme' style={{color: 'rgb(217, 213, 169)'}} to={{ pathname: "https://github.com/sds-smith/weather/blob/master/README.md"}} target='_blank'>More Info</Link>  
             </div>
         </li>  
     ])
