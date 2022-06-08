@@ -65,8 +65,7 @@ const codecademyCertifications = [
         title : 'Express',
         src : Express,
         alt : 'Express certificate from Codecademy',
-    },
-    
+    },    
 ]
 
 const freeCodeCampCertifications = [
@@ -79,8 +78,7 @@ const freeCodeCampCertifications = [
         title : 'Javascript Algorithms and Data Structures',
         src : JavascriptFCC,
         alt : 'Javascript Algorithms and Data Structures certificate from Free Code Camp',
-    },
-    
+    },    
 ]
 
 const udemyCertifications = [
@@ -89,7 +87,6 @@ const udemyCertifications = [
         src : oAuth_2,
         alt : 'oAuth 2.0 certificate from Udemy',
     },
-
 ]
 
 const linkedinLearningCertifications = [
@@ -98,7 +95,6 @@ const linkedinLearningCertifications = [
         src : Agile,
         alt : 'Agile Foundations certificate from Linkedin Learning',
     },
-
 ]
 
 const certificationsData = [
@@ -125,7 +121,6 @@ const certificationsData = [
 ]
 
 function Certifications() {
-
 
     const clickMessage = () => {
         const highlight = document.getElementById('highlight')
@@ -161,6 +156,7 @@ function Certifications() {
                 <h1 id='name'>Shawn Smith</h1>
                 <p className='hr'></p>
                 <h4 id='role'>certifications</h4>
+                
                 {certificationsData.map((category) => (
                     <div className={category.class_name}>
                     <h2>{category.title}</h2>
