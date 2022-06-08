@@ -101,6 +101,29 @@ const linkedinLearningCertifications = [
 
 ]
 
+const certificationsData = [
+    {
+        class_name : 'codecademy cert-container',
+        title : 'Codecademy Certifications',
+        array : codecademyCertifications
+    },
+    {
+        class_name : 'freecodecamp cert-container',
+        title : 'FreeCodeCamp Certifications',
+        array : freeCodeCampCertifications
+    },
+    {
+        class_name : 'udemy cert-container',
+        title : 'Udemy Certifications',
+        array : udemyCertifications
+    },
+    {
+        class_name : 'linkedinLearning cert-container',
+        title : 'Linkedin Learning Certifications',
+        array : linkedinLearningCertifications
+    }, 
+]
+
 function Certifications() {
 
 
@@ -138,10 +161,11 @@ function Certifications() {
                 <h1 id='name'>Shawn Smith</h1>
                 <p className='hr'></p>
                 <h4 id='role'>certifications</h4>
-                <div className='codecademy cert-container'>
-                    <h2>Codecademy Certifications</h2>
+                {certificationsData.map((category) => (
+                    <div className={category.class_name}>
+                    <h2>{category.title}</h2>
                     <ul >
-                        {codecademyCertifications.map((cert) => (
+                        {category.array.map((cert) => (
                             <li>
                                 <h3>{cert.title}</h3>
                                 <img 
@@ -155,57 +179,8 @@ function Certifications() {
                         ))}
                     </ul>
                 </div>
-                <div className='freecodecamp cert-container'>
-                    <h2>FreeCodeCamp Certifications</h2>
-                    <ul >
-                        {freeCodeCampCertifications.map((cert) => (
-                            <li>
-                                <h3>{cert.title}</h3>
-                                <img 
-                                    src={cert.src}  
-                                    alt={cert.alt} 
-                                    onMouseEnter={clickMessage} 
-                                    onMouseOut={rmClickMessage} 
-                                    onClick={()=>frameThis(cert.src)} 
-                                /> 
-                            </li>                            
-                        ))}
-                    </ul>
-                </div>
-                <div className='udemy cert-container'>
-                    <h2>Udemy Certifications</h2>
-                    <ul >
-                        {udemyCertifications.map((cert) => (
-                            <li>
-                                <h3>{cert.title}</h3>
-                                <img 
-                                    src={cert.src}  
-                                    alt={cert.alt} 
-                                    onMouseEnter={clickMessage} 
-                                    onMouseOut={rmClickMessage} 
-                                    onClick={()=>frameThis(cert.src)} 
-                                /> 
-                            </li>                            
-                        ))}
-                    </ul>
-                </div>
-                <div className='linkedinLearning cert-container'>
-                    <h2>Linkedin Learning Certifications</h2>
-                    <ul >
-                        {linkedinLearningCertifications.map((cert) => (
-                            <li>
-                                <h3>{cert.title}</h3>
-                                <img 
-                                    src={cert.src}  
-                                    alt={cert.alt} 
-                                    onMouseEnter={clickMessage} 
-                                    onMouseOut={rmClickMessage} 
-                                    onClick={()=>frameThis(cert.src)} 
-                                /> 
-                            </li>                            
-                        ))}
-                    </ul>
-                </div>
+                ))}
+
                 <div className='highlight' id='highlight'></div>
         </div>
     )
