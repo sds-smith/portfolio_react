@@ -27,6 +27,11 @@ const codecademyCertifications = [
         alt : 'react certificate from Codecademy',
     },
     {
+        title : 'React Native',
+        src : React_Native,
+        alt : 'react native certificate from Codecademy',
+    },
+    {
         title : 'Intermediate Javascript',
         src : Intermediate_Javascript,
         alt : 'Intermediate Javascript certificate from Codecademy',
