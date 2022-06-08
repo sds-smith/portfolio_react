@@ -41,14 +41,21 @@
 .freecodecamp {
   position: absolute;
   top: 10%;
-  right: 10rem;
+  right: 15rem;
   height: 30%;
 }
 
 .udemy {
   position: absolute;
-  bottom: 10%;
-  right: 10rem;
+  bottom: 25%;
+  right: 15rem;
+  height: 30%;
+}
+
+.linkedinLearning {
+  position: absolute;
+  bottom: 5%;
+  right: 15rem;
   height: 30%;
 }
 

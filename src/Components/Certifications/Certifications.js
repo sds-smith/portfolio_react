@@ -13,7 +13,88 @@ import Responsive_Design from '../../media/certifications/Responsive_Web_FCC.png
 import JavascriptFCC from '../../media/certifications/Javascript_Algorithms_Data_Structures_FCC.png'
 import oAuth_2 from '../../media/certifications/oAuth_2.0_Udemy.jpeg'
 import Express from '../../media/certifications/Express_Codecademy.png'
+import Agile from '../../media/certifications/Agile_Foundations_LinkedinLearning.png'
 
+const codecademyCertifications = [
+    {
+        title : 'Front End Engineer',
+        src : Front_End,
+        alt : 'front end certificate from Codecademy',
+    },
+    {
+        title : 'React',
+        src : React,
+        alt : 'react certificate from Codecademy',
+    },
+    {
+        title : 'Intermediate Javascript',
+        src : Intermediate_Javascript,
+        alt : 'Intermediate Javascript certificate from Codecademy',
+    },
+    {
+        title : 'Javascript',
+        src : Javascript,
+        alt : 'Javascript certificate from Codecademy',
+    },
+    {
+        title : 'Vue',
+        src : Vue,
+        alt : 'Vue certificate from Codecademy',
+    },
+    {
+        title : 'HTML',
+        src : HTML,
+        alt : 'HTML certificate from Codecademy',
+    },
+    {
+        title : 'Command Line',
+        src : Command_Line,
+        alt : 'Command Line certificate from Codecademy',
+    },
+    {
+        title : 'NodeJS',
+        src : NodeJS,
+        alt : 'NodeJS certificate from Codecademy',
+    },
+    {
+        title : 'Express',
+        src : Express,
+        alt : 'Express certificate from Codecademy',
+    },
+    
+]
+
+const freeCodeCampCertifications = [
+    {
+        title : 'Responsive Design',
+        src : Responsive_Design,
+        alt : 'Responsive Design certificate from Free Code Camp',
+    },
+    {
+        title : 'Javascript Algorithms and Data Structures',
+        src : JavascriptFCC,
+        alt : 'Javascript Algorithms and Data Structures certificate from Free Code Camp',
+    },
+    
+]
+
+const udemyCertifications = [
+    {
+        title : 'oAuth 2.0',
+        src : oAuth_2,
+        alt : 'oAuth 2.0 certificate from Udemy',
+    },
+
+]
+
+const linkedinLearningCertifications = [
+    {
+        title : 'Agile Foundations',
+        src : Agile,
+        alt : 'Agile Foundations certificate from Linkedin Learning',
+    },
+
+]
 
 function Certifications() {
 
@@ -55,146 +136,69 @@ function Certifications() {
                 <div className='codecademy cert-container'>
                     <h2>Codecademy Certifications</h2>
                     <ul >
-                        <li>
-                            <h3>Front End Engineer</h3>
-                            <img 
-                                src={Front_End} 
-                                alt='front end certificate'
-                                onMouseEnter={clickMessage}
-                                onMouseOut={rmClickMessage}
-                                onClick={()=>frameThis(Front_End)}
-                            />
-                        </li>
-                        <li>
-                            <h3>React Native</h3>
-                            <img 
-                                src={React_Native} 
-                                alt='react native certificate'
-                                onMouseEnter={clickMessage}
-                                onMouseOut={rmClickMessage}
-                                onClick={()=>frameThis(React_Native)}
-                            />
-                        </li>
-                        <li>
-                            <h3>React</h3>
-                            <img 
-                                src={React} 
-                                alt='react certificate'
-                                onMouseEnter={clickMessage}
-                                onMouseOut={rmClickMessage}
-                                onClick={()=>frameThis(React)}
-                            />
-                        </li>
-                        <li>
-                            <h3>Intermediate Javascript</h3>
-                            <img 
-                                src={Intermediate_Javascript} 
-                                alt='intermediate javascript certificate'
-                                onMouseEnter={clickMessage}
-                                onMouseOut={rmClickMessage}
-                                onClick={()=>frameThis(Intermediate_Javascript)}
-                            />
-                        </li>
-                        <li>
-                            <h3>Javascript</h3>
-                            <img 
-                                src={Javascript} 
-                                alt='javascript certificate'
-                                onMouseEnter={clickMessage}
-                                onMouseOut={rmClickMessage}
-                                onClick={()=>frameThis(Javascript)}
-                            />
-                        </li>
-                        <li>
-                            <h3>Vue</h3>
-                            <img 
-                                src={Vue} 
-                                alt='vue certificate'
-                                onMouseEnter={clickMessage}
-                                onMouseOut={rmClickMessage}
-                                onClick={()=>frameThis(Vue)}
-                            />
-                        </li>
-                        <li>
-                            <h3>HTML</h3>
-                            <img 
-                                src={HTML} 
-                                alt='html certificate'
-                                onMouseEnter={clickMessage}
-                                onMouseOut={rmClickMessage}
-                                onClick={()=>frameThis(HTML)}
-                            />
-                        </li>
-                        <li>
-                            <h3>Command Line</h3>
-                            <img 
-                                src={Command_Line} 
-                                alt='command line certificate'
-                                onMouseEnter={clickMessage}
-                                onMouseOut={rmClickMessage}
-                                onClick={()=>frameThis(Command_Line)}
-                            />
-                        </li>
-                        <li>
-                            <h3>NodeJS</h3>
-                            <img 
-                                src={NodeJS} 
-                                alt='node js certificate'
-                                onMouseEnter={clickMessage}
-                                onMouseOut={rmClickMessage}
-                                onClick={()=>frameThis(NodeJS)}
-                            />
-                        </li>
-                        <li>
-                            <h3>Express</h3>
-                            <img 
-                                src={Express} 
-                                alt='node js certificate'
-                                onMouseEnter={clickMessage}
-                                onMouseOut={rmClickMessage}
-                                onClick={()=>frameThis(Express)}
-                            />
-                        </li>
+                        {codecademyCertifications.map((cert) => (
+                            <li>
+                                <h3>{cert.title}</h3>
+                                <img 
+                                    src={cert.src}  
+                                    alt={cert.alt} 
+                                    onMouseEnter={clickMessage} 
+                                    onMouseOut={rmClickMessage} 
+                                    onClick={()=>frameThis(cert.src)} 
+                                /> 
+                            </li>                            
+                        ))}
                     </ul>
                 </div>
                 <div className='freecodecamp cert-container'>
                     <h2>FreeCodeCamp Certifications</h2>
                     <ul >
-                        <li>
-                            <h3>Responsive Design</h3>
-                            <img 
-                                src={Responsive_Design} 
-                                alt='responsive design certification'
-                                onMouseEnter={clickMessage}
-                                onMouseOut={rmClickMessage}
-                                onClick={()=>frameThis(Responsive_Design)}
-                            />
-                        </li>
-                        <li>
-                            <h3>Javascript Algorithms and Data Structures</h3>
-                            <img 
-                                src={JavascriptFCC} 
-                                alt='Javascript algorithms and data structures certification'
-                                onMouseEnter={clickMessage}
-                                onMouseOut={rmClickMessage}
-                                onClick={()=>frameThis(JavascriptFCC)}
-                            />
-                        </li>
+                        {freeCodeCampCertifications.map((cert) => (
+                            <li>
+                                <h3>{cert.title}</h3>
+                                <img 
+                                    src={cert.src}  
+                                    alt={cert.alt} 
+                                    onMouseEnter={clickMessage} 
+                                    onMouseOut={rmClickMessage} 
+                                    onClick={()=>frameThis(cert.src)} 
+                                /> 
+                            </li>                            
+                        ))}
                     </ul>
                 </div>
                 <div className='udemy cert-container'>
                     <h2>Udemy Certifications</h2>
                     <ul >
-                        <li>
-                            <h3>oAuth 2.0</h3>
-                            <img 
-                                src={oAuth_2} 
-                                alt='oAuth 2.0 certification'
-                                onMouseEnter={clickMessage}
-                                onMouseOut={rmClickMessage}
-                                onClick={()=>frameThis(oAuth_2)}
-                            />
-                        </li>
+                        {udemyCertifications.map((cert) => (
+                            <li>
+                                <h3>{cert.title}</h3>
+                                <img 
+                                    src={cert.src}  
+                                    alt={cert.alt} 
+                                    onMouseEnter={clickMessage} 
+                                    onMouseOut={rmClickMessage} 
+                                    onClick={()=>frameThis(cert.src)} 
+                                /> 
+                            </li>                            
+                        ))}
+                    </ul>
+                </div>
+                <div className='linkedinLearning cert-container'>
+                    <h2>Linkedin Learning Certifications</h2>
+                    <ul >
+                        {linkedinLearningCertifications.map((cert) => (
+                            <li>
+                                <h3>{cert.title}</h3>
+                                <img 
+                                    src={cert.src}  
+                                    alt={cert.alt} 
+                                    onMouseEnter={clickMessage} 
+                                    onMouseOut={rmClickMessage} 
+                                    onClick={()=>frameThis(cert.src)} 
+                                /> 
+                            </li>                            
+                        ))}
                     </ul>
                 </div>
                 <div className='highlight' id='highlight'></div>
