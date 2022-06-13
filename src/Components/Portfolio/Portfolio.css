@@ -150,6 +150,13 @@
     background-position: center;
 }
 
+#crwn-card {
+    background-image: url(../../media/crwn-clothing.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+
 .description {
     padding: 0;
     margin-top: 5rem;

@@ -83,13 +83,7 @@ function About() {
                     <div className='skills-scroller'>
                         <input type='range' className='slider' min={50} max={2000} step={1} value={scrollerInterval} onChange={slideAction} ></input>
                         <ul>
-                            <li>{skills[0]}</li>
-                            <li>{skills[1]}</li>
-                            <li>{skills[2]}</li>
-                            <li>{skills[3]}</li>
-                            <li>{skills[4]}</li>
-                            <li>{skills[5]}</li>
-                            <li>{skills[6]}</li>
+                            {skills.map((skill) => <li>{skill}</li>)}
                         </ul>
                     </div>
 

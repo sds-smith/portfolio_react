@@ -21,6 +21,19 @@ function Portfolio() {
 
         <li>
             <div className='card-heading'>
+                <h3>Crown Clothing</h3>
+                <p>React single-page eCommerce app</p>
+            </div>
+
+            <div className='card' id='crwn-card'>
+                <Link className='portfolio-link' id='crwn-clothing' style={{color: 'rgb(64, 62, 37)'}} to={{ pathname: "https://sds-crown-clothing.netlify.app" }} target="_blank" >Open App</Link>
+                <Link className='portfolio-link rm' id='crwn-readme' style={{color: 'rgb(217, 213, 169)'}} to={{ pathname: "https://github.com/sds-smith/crwn-clothing/blob/master/README.md"}} target='_blank'>More Info</Link>  
+        
+            </div>
+        </li>,
+
+        <li>
+            <div className='card-heading'>
                 <h3>WHRDL</h3>
                 <p>React Native mobile app</p>
             </div>
@@ -58,6 +71,7 @@ function Portfolio() {
 
     const [descriptions, setDescriptions] = useState([
         'Connect to your Spotify Premium account, execute searches and receive search term matches and recommendations, play/pause a song, like/ unlike songs, create custom playlist, and save playlist to your Spotify profile.',
+        'Fully-functional eCommerce site built with React 18, React Router 6, Firebase. Securely sign-in with google, or create and account to sign in with username/password. Add items to cart, delete items, securely checkout with Stripe.',
         'Clone of a popular word game. Guess the secret word in six tries. Reset game, get hints',
         'Generate random unique password and copy to clipboard',
         'Search by City/ State/ Country, or by longitudinal coordinates, and receive up-to-the-minute weather data'
