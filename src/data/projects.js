@@ -6,6 +6,16 @@ import WHRDL from '../media/WHRDL_card.png'
 
 export const Projects = [
     {   
+        id: 'weather-card',
+        heading_title : 'Weather App',
+        heading_subtitle : 'Vue single-page web app',
+        background_image : Weather,
+        video_link : null,
+        live_link : 'https://sds-smith.github.io/weather/',
+        readme_link : 'https://github.com/sds-smith/weather/blob/master/README.md',
+        description : 'Search by City/ State/ Country, or by longitudinal coordinates, and receive up-to-the-minute weather data'
+    },
+    {   
         id: 'atj-card',
         heading_title : 'Assemble the Jams',
         heading_subtitle : 'React single-page web app',
@@ -23,7 +33,7 @@ export const Projects = [
         video_link : null,
         live_link : 'https://sds-crown-clothing.netlify.app',
         readme_link : 'https://github.com/sds-smith/crwn-clothing/blob/master/README.md',
-        description : 'Fully-functional eCommerce site built with React 18, React Router 6, Firebase. Securely sign-in with google, or create and account to sign in with username/password. Add items to cart, delete items, securely checkout with Stripe.'
+        description : 'Fully-functional eCommerce site built with React 18, React Router 6, React styled components, Firebase. Securely sign-in with Google, or create and account to sign in with username/password. Add items to cart, delete items, securely checkout with Stripe.'
     },
     {   
         id: 'WHRDL-card',
@@ -33,26 +43,16 @@ export const Projects = [
         video_link : null,
         live_link : '/WHRDL',
         readme_link : 'https://github.com/sds-smith/whrdl/blob/master/README.md',
-        description : 'Clone of a popular word game. Guess the secret word in six tries. Reset game, get hints'
+        description : 'Clone of a popular word game built with React Native and Expo. Guess the secret word in six tries. Reset game, get hints'
     },
     {   
         id: 'rpg-card',
         heading_title : 'Password Generator',
-        heading_subtitle : 'HTML/JS single-page web app',
+        heading_subtitle : 'HTML/JS web app',
         background_image : RandomPasswordGenerator,
         video_link : null,
         live_link : 'https://sds-smith.github.io/password_generator/',
         readme_link : 'https://github.com/sds-smith/password_generator/blob/master/README.md',
         description : 'Generate random unique password and copy to clipboard'
-    },
-    {   
-        id: 'weather-card',
-        heading_title : 'Weather App',
-        heading_subtitle : 'Vue single-page web app',
-        background_image : Weather,
-        video_link : null,
-        live_link : 'https://sds-smith.github.io/weather/',
-        readme_link : 'https://github.com/sds-smith/weather/blob/master/README.md',
-        description : 'Search by City/ State/ Country, or by longitudinal coordinates, and receive up-to-the-minute weather data'
     }
 ]
