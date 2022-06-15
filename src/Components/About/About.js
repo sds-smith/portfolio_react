@@ -5,7 +5,6 @@ import Portrait from '../../media/portrait.jpeg'
 import Resume from '../../media/Shawn_Smith_resume_04202022.png'
 
 function About() {
-
     const [skills, setSkills] = useState([
                     'Responsive Web Design with HTML5 and CSS3', 
                     'Interactive Web Development with Javascript', 
@@ -71,29 +70,24 @@ function About() {
                     <h4  id='role'>web and mobile developer</h4> 
                 </div>
             </div>
-
             <div className='about-section'>
-
-
+                <div className='btn-container'>
+                    <button className='credentials'id='resumeBtn' onClick={toggleResume}>Resume</button>
+                    <Link className='credentials rm' id='certLink' to={'/certifications'} style={{color: 'rgb(217, 213, 169)'}}>Certifications</Link>
+                </div>                
                 <div className='about-paragraph'>
-
                     <p >After working most of my adult life in the restaurant industry, in 2021 I decided a career change was in order, and with the support of my wife and family, I set myself down the path toward a career in Web and Mobile Development.</p>
                     <p>From my experience as a multi-unit restaurant leader, I bring soft skills like strong communication, collaboration, relationship-building, partnering and mentoring.  I bring over a decade of experience iterating, prototyping, and scaling an ever-changing operational model.</p>    
                     <p>From my ongoing studies in Web and Mobile Development, I have attained valuable technical skills, including:</p>    
                     <div className='skills-scroller'>
                         <input type='range' className='slider' min={50} max={2000} step={1} value={scrollerInterval} onChange={slideAction} ></input>
                         <ul>
-                            {skills.map((skill) => <li>{skill}</li>)}
+                            {skills.slice(0, 7).map((skill) => <li>{skill}</li>)}
                         </ul>
                     </div>
-
                 <p>I recently attained a score of 725 on the General Coding Assessment administered by CodeSignal (815 on the practice test), and completed the Front End Engineer certification from Codecademy.
                         I am driven by the desire to be better today than yesterday, better tomorrow than today, and by the belief that the moment we stop learning, we stop living. I love to solve problems and I thrive in a fast-paced work environment.  
                 </p>
-                <div className='btn-container'>
-                    <button className='credentials'id='resumeBtn' onClick={toggleResume}>Resume</button>
-                    <Link className='credentials rm' id='certLink' to={'/certifications'} style={{color: 'rgb(217, 213, 169)'}}>Certifications</Link>
-                </div>
                 <img src={Resume} className='Resume' id='resume' alt='Shawn Smith Resume' style={{height: resumeHeight + 'vh'}}/>
                 </div>
             </div>               

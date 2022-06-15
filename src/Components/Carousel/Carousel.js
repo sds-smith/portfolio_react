@@ -4,20 +4,14 @@ import { Projects } from '../../data/projects'
 
 import { CardHeading, CarouselContainer, PortfolioCard, PortfolioList, Description } from './Carousel.styles'
 
-
-
 const Carousel = () => {
-
     const [cards, setCards] = useState(Projects)
-
     const advanceCarousel = () => {
         setCards([cards[cards.length-1], ...cards.slice(0, cards.length-1)])
     }
-
     const reverseCarousel = () => {
         setCards([...cards.slice(1), cards[0]])
     }
-
     return (
         <>
             <CarouselContainer>
@@ -30,7 +24,6 @@ const Carousel = () => {
                                     <h3>{card.heading_title}</h3>
                                     <p>{card.heading_subtitle}</p>
                                 </CardHeading>
-
                                 <PortfolioCard backgroundImage={card.background_image} >
                                     { card.video_link && <Link className='portfolio-link rm' style={{color: 'rgb(217, 213, 169)'}} to={{ pathname: card.video_link}} target='_blank'>View Demo</Link>}  
                                     <Link className='portfolio-link' style={{color: 'rgb(64, 62, 37)'}} to={{ pathname: card.live_link }} target="_blank" >Open App</Link>
@@ -45,7 +38,6 @@ const Carousel = () => {
             </CarouselContainer>
             <Description>{cards[2].description}</Description>        
         </>
-
     )
 }
 
