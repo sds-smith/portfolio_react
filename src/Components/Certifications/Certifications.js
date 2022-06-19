@@ -14,6 +14,7 @@ import JavascriptFCC from '../../media/certifications/Javascript_Algorithms_Data
 import oAuth_2 from '../../media/certifications/oAuth_2.0_Udemy.jpeg'
 import Express from '../../media/certifications/Express_Codecademy.png'
 import Agile from '../../media/certifications/Agile_Foundations_LinkedinLearning.png'
+import Triplebyte_React from '../../media/certifications/React_Triplebyte.png'
 
 const codecademyCertifications = [
     {
@@ -89,12 +90,17 @@ const udemyCertifications = [
     },
 ]
 
-const linkedinLearningCertifications = [
+const miscCertifications = [
     {
         title : 'Agile Foundations',
         src : Agile,
         alt : 'Agile Foundations certificate from Linkedin Learning',
     },
+    {
+        title : 'Triplebyte React Certification',
+        src : Triplebyte_React,
+        alt : 'React certificate from Triplebyte',
+    }
 ]
 
 const certificationsData = [
@@ -115,8 +121,8 @@ const certificationsData = [
     },
     {
         class_name : 'linkedinLearning cert-container',
-        title : 'Linkedin Learning Certifications',
-        array : linkedinLearningCertifications
+        title : 'Miscellaneous Certifications',
+        array : miscCertifications
     }, 
 ]
 
