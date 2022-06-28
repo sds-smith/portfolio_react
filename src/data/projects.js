@@ -28,12 +28,12 @@ export const Projects = [
     {   
         id: 'crwn-card',
         heading_title : 'Crown Clothing',
-        heading_subtitle : 'React single-page eCommerce app',
+        heading_subtitle : 'Fully scalable React eCommerce single-page web app',
         background_image : CrownClothing,
         video_link : null,
         live_link : 'https://sds-crown-clothing.netlify.app',
         readme_link : 'https://github.com/sds-smith/crwn-clothing/blob/master/README.md',
-        description : 'Fully-functional eCommerce site built with React 18, React Router 6, React styled components, Firebase. Securely sign-in with Google, or create and account to sign in with username/password. Add items to cart, delete items, securely checkout with Stripe.'
+        description : 'React 18 | React Router 6 | Redux, Redux sagas | css-in-js | Firebase | Stripe. Securely sign-in with Google, or create and account to sign in with username/password. Add items to cart, delete items, securely checkout with Stripe.'
     },
     {   
         id: 'WHRDL-card',
