@@ -5,7 +5,7 @@ export const CardHeading = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    width: 100%;
+    width: fit-content;
     margin-bottom: 5px;
     h3,
     p {
