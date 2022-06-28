@@ -10,6 +10,7 @@ export const CardHeading = styled.div`
     h3,
     p {
         margin: 0;
+        width: fit-content;
     }
 `
 
