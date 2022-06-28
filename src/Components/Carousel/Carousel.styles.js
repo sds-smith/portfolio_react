@@ -11,54 +11,7 @@ export const CardHeading = styled.div`
     p {
         margin: 0;
         width: fit-content;
-    }
-`
-
-export const PortfolioList = styled.ul`
-    padding-top: 5rem;
-    padding-left: 0;
-    width: 95%;
-    display: flex;
-    justify-content: center;
-
-
-    li {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 15rem;
-        width: 20rem;
-        overflow: visible;
-    }
-
-    li:first-child {
-        margin: 0px -75px 0px 0px;
-        transform: scale(.65);
-    }
-
-    li:last-child {
-        margin: 0px 0px 0px -75px;
-        transform: scale(.65)
-    }
-
-    li:nth-child(2),
-     li:nth-child(4) {
-        margin: 0 -100px;
-        z-index: 1;
-
-        // ${CardHeading} {
-            // visibility: hidden;
-        // }
-    }
-
-    li:nth-child(3) {
-        transform: scale(1.5);
-        z-index: 2;
-
-        .card {
-            box-shadow: 10px 10px 5px rgb(64, 62, 37);
-        }
+        block-size: fit-content;
     }
 `
 
@@ -71,7 +24,7 @@ export const PortfolioCard = styled.div`
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
-    width: 80%;
+    width: 16rem;
     height: 80%;
 
 
@@ -104,6 +57,64 @@ export const PortfolioCard = styled.div`
     background-color: rgb(64, 62, 37);
 }
 `
+
+export const PortfolioList = styled.ul`
+    padding-top: 5rem;
+    padding-left: 0;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+
+
+    li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 15rem;
+        min-width: 20rem;
+        overflow: visible;
+    }
+
+    li:first-child {
+        margin: 10px -75px 0px 0px;
+        transform: scale(.65);
+    }
+
+    li:last-child {
+        margin: 10px 0px 0px -75px;
+        transform: scale(.65)
+    }
+
+    li:nth-child(2),
+     li:nth-child(4) {
+        margin: 15px -100px;
+        z-index: 1;
+
+        ${CardHeading} {
+            h3,
+            p {
+                // opacity: 0.5;
+            }
+        }
+    }
+
+    li:nth-child(3) {
+        transform: scale(1.5);
+        z-index: 2;
+
+        ${CardHeading} {
+            margin-bottom: 10px;
+        }
+
+        ${PortfolioCard} {
+            box-shadow: 10px 10px 5px rgb(64, 62, 37);
+            margin-bottom: 20px;
+        }
+    }
+`
+
+
 
 
 export const CarouselContainer = styled.div`
