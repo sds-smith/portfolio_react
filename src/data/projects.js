@@ -3,6 +3,7 @@ import AssembleTheJams from '../media/atj.png'
 import RandomPasswordGenerator from '../media/rpg.png'
 import Weather from '../media/weather.png'
 import WHRDL from '../media/WHRDL_card.png'
+import EDD from '../media/edd.png'
 
 export const Projects = [
     {   
@@ -54,5 +55,15 @@ export const Projects = [
         live_link : 'https://sds-smith.github.io/password_generator/',
         readme_link : 'https://github.com/sds-smith/password_generator/blob/master/README.md',
         description : 'Generate random unique password and copy to clipboard'
+    },
+    {   
+        id: 'edd-card',
+        heading_title : 'Real Estate Website',
+        heading_subtitle : 'React Web App',
+        background_image : EDD,
+        video_link : null,
+        live_link : 'https://dannettel-realtor.netlify.app/',
+        readme_link : 'https://github.com/sds-smith/dannettel-react/blob/master/README.md',
+        description : 'Realtor Website.'
     }
 ]
